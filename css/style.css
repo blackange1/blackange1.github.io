@@ -1,0 +1,89 @@
+a + nav, .stl{
+		background-color: yellow;
+	}
+.stl{
+	text-decoration;
+}
+.menu_item{
+	display: inline-block;
+	margin-left: 0.8em;
+	text-transform: uppercase;
+	border: 2px groove brown;
+	padding: 5px;
+	margin: 10;
+}
+.menu{
+	background: yellow;
+}
+header>img{
+	max-height: 75px;
+	float: left;
+}
+.menu_item:first-child{
+	font-style:italic;
+}
+li[class="item"]{
+	text-align: center;
+	letter-spacing: .1em;
+	font-size: 2em;
+	font-family: monospace;
+	font-weight: 900;
+	//text-decoration: overline;
+}
+nav{
+	letter-spacing: .2em;
+}
+.social a:: before{
+	height: 35px;
+	width: 35px;
+}
+.social a{
+
+	text-decoration: none;
+}
+h1 :hover{
+	color: red;
+}
+h1 a{
+	color: orange;
+	text-shadow: 3px ;
+}
+//початок
+.submenu{
+	display: inline-block;
+	position: fixed;
+}
+ul.menu > li > a:hover {
+    color: red;
+}
+
+/////////////////////////Домашня робота
+
+.mainmenubtn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;-
+}
+
+///////////////////////////
