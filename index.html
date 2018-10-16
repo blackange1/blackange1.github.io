@@ -1,72 +1,211 @@
-<!DOCTYPE>
-<head lang="en">
-	<meta charset="UTF-8"/>
-	<meta description="Опис">
-	<title>1-st lesson</title>
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>Skill Brain</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	
 </head>
 <body>
-	<header>
-		<aside><!-- Бокова панель. Список -->
-			<ul style="list-style-type: disc" class="sidebarmenu">
-				<li class="item">Зима</li>
-				<li class="item">Весна
-					<ol>
-						<li>Март</li>
-						<li>Апрель</li>
-						<li>Май</li>
-					</ol>
-				</li>
-				<li class="item">Лето</li>
-				<li class="item">Осень</li>
-			</ul>
-		</aside>
-		<img alt="notepad++" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png">
-	<nav>
-		<ul class="menu" style="list-style-type: none">
-			<li class="menu_item"><a href="">Главная</li>
-			<div class="dropdown">
-				<li class="menu_item"><a href="">
-					<div class="mainmenubtn">О нас#</div></a>
-					<div class="dropdown-child">
-						<a href="">История</a>
-						<a href="">Планы на будущее</a>
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Skill Brain</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="#">Home</a></li>-->
+            <li><a href="about.html">Наша команда</a></li>
+            <li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Наші курси <b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+            		<li class="dropdown-header">3D графіка</li>
+	                <li><a href="blender.html">Blender</a></li>
+	                <li><a href="supermaya.html">Супер Maya</a></li>
+	                
+					<li class="divider"></li>
+	                <li class="dropdown-header">2D графіка(в розробці)</li>
+	                <li><a href="#">Photoshop для новачків</a></li>
+	                <li><a href="#">Illustrator для новачків</a></li>
+	                <li class="divider"></li>
+	                <li class="dropdown-header">Робота з відео(в розробці)</li>
+	                <li><a href="#">Primer школа монтажу</a></li>
+					<li><a href="#">After effekt</a></li>
+	                <li><a href="#">Моушин</a></li>
+	                <li class="divider"></li>
+	                <li class="dropdown-header">Робота зі звуком(в розробці)</li>
+					<li><a href="#">Звукорежисура</a></li>
+					<li><a href="#">Гітарні уроки</a></li>
+	                <li class="divider"></li>
+	                <li class="dropdown-header">Web розробка(в розробці)</li>
+					<li><a href="#">HTML and CSS</a></li>
+					<li><a href="#">Java Script</a></li>
+            	</ul>
+            </li>
+            <li><a href="archiv/index.html" target="_blank">Архів 2018</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <header>
+		<div class="mycontent">
+			<div class="row">
+				<div class="col-md-6"></div>
+				<div class="col-md-6 hello">
+					<h1 class="rubberBand animated">Розсошеська гімназія запрошує!!!</h1><br>
+					<div class="bounceIn animated"><span class="lead">Відвідай одні з найкращих курсів у сфері ІТ-технологій.<br>Тобі варто спробувати</span>
 					</div>
-				</li>
+				</div>
 			</div>
-			<li class="menu_item"><a href="">Контакты</li>
-			<li class="menu_item"><a href="">Карта</a></li>
-			<div class="dropdown">
-				<li class="menu_item"><a href="">
-				<div class="mainmenubtn">Наша команда#</div></a>
-					<div class="dropdown-child">
-						<a href="">Начальник</a>
-						<a href="">Я</a>
-						<a href="">Рабы</a>
-					</div>
-				</li>
-			</div>
-		</ul>
-	</nav>
-	
+		</div>
 	</header>
-	<content>
-	<h1><a href="">Название сайта</a></h1>
-		<section>
-			<h2></h2>
-			<span>Some string</span>
-			<a href="https://codepen.io" target="_blank" title="Підсказка">codepen</a>
-		</section>
-		<section>
-			<h2>Вторая история</h2>
-			<p>Текст <span style="text-decoration: underline" class="stl">какойто</span>, о <em>чёмто</em>, о <strong>комто</strong></p>
-		</section>
-	</content>
+	
+	<div class="mybaner">
+		<div class="row text-center">
+			<div class="col-md-3 baner1 bounceInLeft animated">
+				<strong>КУРСИ РЕКОМЕНДОВАНІ:</strong>
+				<ul>
+					<li>новачкам, рішуче налаштованим будувати кар'єру в сфері IT;</li>
+					<li>специалістам, які бажають змінити свою професію;</li>
+					<li>початківцям-тестувальникам з метою підвищення рівня знань.</li>
+				</ul>
+			</div>
+			<div class="col-md-3 baner2 bounceInUp animated">
+				<strong>ФОРМАТ НАВЧАННЯ</strong>
+				<p>Наші курси проводяться виключно в форматі ONLINE.</p>
+				<p>У програму курсів включені наступні теоретичні і практичні блоки:</p>
+				<ul>
+					<li>лекції–вебінари;</li>
+					<li>практичні роботи;</li>
+					<li>підсумковий екзамен.</li>
+				</ul>
+			</div>
+			<div class="col-md-3 baner3 fadeInLeft animated">
+				<strong>Переваги навчання ONLINE:</strong>
+				<ul>
+					<li>немає прив'язки до місця навчання, головне - наявність доступу до Інтернет;</li>
+					<li>зручний графік - ви самі вирішуєте, коли і які завдання виконувати;</li>
+					<li>цілодобовий доступ до необхідних відеоматеріалів.</li>
+				</ul>
+			</div>
+			<div class="col-md-3 baner4 bounceInRight animated">
+				<strong>Переваги навчання ONLINE:</strong>
+				<p>Після успішного завершення курсу і здачі фінального іспиту ви отримуєте сертифікат про успішне завершення навчання на курсі.</p>
+				<p>Сертифікат, безсумнівно, буде додатковою перевагою при Вашому подальшому працевлаштуванні фахівцем з тестування.</p>
+			</div>
+		</div>
+	</div>
+	<div class="mycontent">
+		<h2 class="text-center myh2">Наші курси</h2>
+		<div class="row text-center">
+			<div class="col-md-4 curse">
+				<div class="row">
+					<div class="col-md-6"><img src="img/ico1.png" width="20px" alt="Blender"></div>
+					<div class="col-md-6"><strong>Blender 3D. Початок 23/07/2019</strong></div>
+					<p>У розрізі даного курсу Ви дізнаєтеся про основні можливості програми Blender. 
+					Курс складається із 24-х уроків, разбитих на 7 розділів, де викладені базові принципи роботи з Blender. 
+					Розрахований на новачків та тих, хто познайомився з Blender відносно недавно.</p>
+				</div>
+			</div>
+			<div class="col-md-4 curse">
+				<div class="row">
+					<div class="col-md-6"><img src="img/ico2.png" width="20px" alt="Maya"></div>
+					<div class="col-md-6"><strong>Maya 3D. Початок 17/08/2019</strong></div>
+					<p>Почніть свій шлях в світ кіно та ігрових 
+					спецефектів в одній із напопулярніших в 
+					індустрії програм – Maya. Курс складається із 24-х уроків, разбитих на 7 розділів, де викладені 
+					базові принципи роботи з Maya. 
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 curse">
+				<div class="row">
+					<p><strong>Інші курси</strong></p>
+					<p>В даний час проводяться роботи над створенням курсів з 2D графіки, обробки відео,
+					робота зі звуком та web-технологій. Усі курси будуть доступні з 15 травня 2019 року. 
+					На деякі з них ви можете подати заявку прямо зараз.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mycontent">
+		<div class="info_about_us">
+			<div class="inf_about"><strong>Цікаві факти про комп'ютери</strong></div>
+			<div class="col-md-4 fff">
+			<ul>
+				<li> Нам достатньо долі секунди, щоби оцінити якість сайту, на який ми зайшли.</li>
+				<li> Про те, чи зможе комп’ютер наздогнати і перегнати нас за здібностями, ведеться чимало суперечок. Але «людиною року» його вже визнавали: у 1982 році це зробили працівники журналу “Time”.</li>
+				<li>Перший електронний лист відправив у 1971 році Рей Томлінсон – автор програми для обміну повідомленнями між комп’ютерами. Він же запропонував використовувати значок @ для розділення імені користувача і комп’ютера.</li>
+				<li>Знамениту комбінацію – програму «на три пальці» – Ctrl-Alt-Del – створив і впровадив один із розробників IBM PC Девід Бредлі.</li>
+			</ul></div>
+			<div class="col-md-4 fff"> 
+			<ul>
+				<li>Люди, що бояться комп’ютерів і всього, що з ними пов’язано, називаються кіберофобами.</li>
+				<li>Свято сисадміна відзначають у багатьох країнах. Але тільки в Штатах він носить назву «День подяки системному адміністраторові».</li>
+				<li> Якщо прийняти всі email-повідомлення, передані в світі, за 100%, то 94% з них припадає на спам.</li>
+				<li> Комп’ютерник – таки не жіноча професія. У найбільшій світовій IT-корпорації – Microsoft – працюють 75% чоловіків і лише 25% жінок.</li>
+				<li>Перші персональні комп’ютери мали дуже обмежений обсяг пам’яті – всього близько 16 кілобайт.</li>
+			</ul></div>
+			<div class="col-md-4 fff">
+			</div>
+		</div>
+	</div>
+
 	<footer>
-		<ul>
-			<li class="social" style="list-style-type: none"><a target="_blank" href="https://www.facebook.com/"><img height="35px" src="https://www.facebook.com/images/fb_icon_325x325.png">facebook</a></li>
-			<li class="social" style="list-style-type: none"><a target="_blank" href="https://twitter.com/?lang=uk"><img height="35px" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png">twitter</a></li>
-			<li class="social" style="list-style-type: none"><a target="_blank" href="https://www.linkedin.com/"><img src="https://yt3.ggpht.com/a-/ACSszfGDvjYK2vL_d3Bglghs2VQhTwbPrTGWxBaNDQ=s900-mo-c-c0xffffffff-rj-k-no" height="35px">LincIn</a></li>
-		</ul>
+		<div class="mycontent">
+			<div class="footer">
+				<div class="row text-center">
+					<div class="col-md-4"><img src="img/women.jpg" alt="teacher1" class="img-circle" width="140px" height="140px"><br>
+						<strong>Головань Анна Василівна</strong><br>
+						вчитель інформатики та англійської мови Розсошенської гімназії<br>
+						<abbr title="телефон">тел.</abbr> +380(66)921-20-74 <br>
+						<a href="mailto:gomerbabenko@gmail.com">golovan.ann@gmail.com</a>
+					</div>
+					<div class="col-md-4"><img src="img/men.jpg" alt="teacher2" class="img-circle" width="140px" height="140px"><br>
+						<strong>Бабенко Володимир Петрович</strong><br>
+						вчитель інформатики Розсошенської гімназії<br>
+						<abbr title="телефон">тел.</abbr> +380(97)071-96-89 <br>
+						<a href="mailto:gomerbabenko@gmail.com">gomerbabenko@gmail.com</a>
+					</div>
+					<div class="col-md-4"><img src="img/men2.jpg" alt="teacher3" class="img-circle" width="140px" height="140px"><br>
+						<strong>Яловець Євген Олександрович</strong><br>
+						вчитель фізики Розсошенської гімназії<br>
+						методист з математики ПОІППО<br>
+						<abbr title="телефон">тел.</abbr> +380(98)491-46-42 <br>
+						<a href="mailto:gomerbabenko@gmail.com">jaloveth.poltava@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact text-center">
+			<ul class="logo">
+				<li><a href="https://vk.com/black_ange1" class="social-links_1" target="_blank"></a></li>
+				<li><a href="https://www.facebook.com/profile.php?id=100013773099977" class="social-links_2" target="_blank"></a></li>
+				<li><a href="https://www.youtube.com/user/RzsGymn" class="social-links_3" target="_blank"></a></li>
+			</ul>
+		</div>
 	</footer>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
 </body>
+</html>

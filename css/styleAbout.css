@@ -8,10 +8,36 @@ body {
 }
 header{
 	display: block;
-	height: 650px;
+	height: 630px;
 	width: 100%;
-	margin-top: 50px;
-	background: url(../img/fonheder.jpg)center #225189 no-repeat;
+	margin-top: 30px;
+	background: url(../img/Fon02.jpg)center #8F00FA no-repeat;
+}
+.mycontent2{
+	//background-color: red;
+	max-width: 888px;
+	margin: 50px auto;
+	
+}
+.hr{
+	display: block;
+	height: 5px;
+	width: 103%;
+	background-color: #C5C5C5;
+	margin-left: -3%;
+	//margin-right: -30px;
+	//background: url(img/patern.png);
+	border-radius: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;  
+}
+.text{
+	padding-top: 20px;
+	//padding-left: 0px; 
+}
+.img-border{
+	border: 4px solid #ececec; 
+	padding-left: 0;
 }
 .mycontent{
 	max-width: 1488px;
@@ -20,20 +46,20 @@ header{
 }
 .hello{
 	//padding-right: 50px;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-left: 50px;
-	color: #FFD715;
+	color: #814405;
 	text-shadow: 2px 3px 2px #000000;
 	}
 /* baner 01 02 03 04*/
-.mybaner{
+/*.mybaner{
 	max-width: 1300px;
 	margin: auto;
 	margin-top: -60px;
 	color: #ffffff;
 }
 .baner1, .baner2, .baner3, .baner4{
-	min-height: 300px;
+	min-height: 260px;
 	text-align: left;
 	padding: 20px 20px 20px 20px;
 }
@@ -48,22 +74,20 @@ header{
 }
 .baner4{
 	background-color: #E948AE;
-}
+}*/
 /*end baner*/
 
 .curse{
-	height: 200px;
+	height: 150px;
 	border: 2px solid #183C8A;
 	border-radius: 30px;
-}.c2{
-	padding:25px;
 }
 
 .info_about_us{
 	margin:0 auto;
 	width: 1366px;
 	min-width:1366px;
-	height:500px;
+	height:768px;
 	padding:30px auto;
 	background-color:#0D0E12;
 	background-image:url(../img/betmen.jpg);
@@ -73,17 +97,7 @@ header{
 	
 	//position: static;
 }
-.inf_about{
-	color: #ffffff;
-	padding-top:40px;
-	margin-bottom: 60px;
-	text-align: center;
-	
-}
-.fff{
-	color: #ffffff;
-	text-align: center;
-}
+
 footer{
 	background-color: #2D2D44;
 	color: #ffffff;
