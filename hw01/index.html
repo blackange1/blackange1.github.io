@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .global{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .center{
+        text-align: center;
+    }
+    .logo{
+        float: left;
+        padding: 2rem 3rem;
+    }
+    .menu{
+        float: right;
+        padding: 2rem 2rem;
+        margin: 0;
+        width: 60%;
+    }
+    .menu-item{
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
+    .menu-item a,
+    .logo a,
+    .footer-info li a
+    {
+        text-decoration: none;
+        color: #000;
+    }
+    .clearfix{
+        clear: both;
+    }
+    header,
+    main,
+    .logo,
+    .menu,
+    footer
+    {
+        border: 2px solid red;
+    }
+    header,
+    main,
+    footer{
+        margin: 1rem 0;
+    }
+    header
+    {
+        padding: 1rem;
+    }
+    main{
+        padding: 1rem 5rem 6rem 6rem;
+    }
+    h1{
+        margin: 3rem 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+    footer{
+        padding: 0 1rem;
+    }
+    .footer-info{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .footer-info li{
+        margin: 0 1rem;
+    }
+</style>
+<body>
+    <div class="global">
+        <header>
+            <nav>
+                <div class="logo"><a href="#">Logo</a></div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Пункт 1</a></li>
+                    <li class="menu-item"><a href="#">Пункт 2</a></li>
+                    <li class="menu-item"><a href="#">Пункт 3</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+        </header>
+        <main>
+            <h1>Заголовок 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda consequatur cumque dolores earum incidunt inventore ipsam modi odit quis recusandae rem repellat tempore, vel voluptatem. Dignissimos earum esse et illo iusto necessitatibus omnis quas rem voluptates voluptatum? Accusamus accusantium aperiam beatae blanditiis consequatur enim esse est expedita fugit ipsam laborum nesciunt odio pariatur perspiciatis possimus praesentium quam quibusdam rem, repudiandae sit soluta tempora, tempore ullam velit voluptate? Accusamus adipisci, animi consequatur corporis deleniti distinctio eaque eius est exercitationem illo ipsa iusto libero magnam mollitia, porro possimus quaerat quidem! Ab ad aliquid asperiores at autem consequatur culpa delectus deserunt dolor dolores excepturi facilis, harum ipsa iste itaque iure laborum molestias nemo nesciunt nobis non nostrum obcaecati odio officia officiis porro quidem quos repellat reprehenderit repudiandae, sequi sit sunt tempora tempore totam ullam vero! At atque autem commodi consectetur corporis, doloremque earum eum harum inventore ipsa labore magni mollitia nihil nisi non pariatur quidem tenetur ullam vel vitae! At exercitationem nisi perferendis rem voluptatibus! At atque aut, corporis dolorem ex excepturi exercitationem illo magni maiores nostrum, nulla quas quod reprehenderit! Animi assumenda aut consectetur, dolor doloribus ea earum, error explicabo inventore ipsum laudantium non, officiis repudiandae saepe sapiente sint temporibus voluptates!</p>
+        </main>
+        <footer>
+            <ul class="footer-info">
+                <li><a href="#">Пункт 1</a></li>
+                <li><a href="#">Пункт 2</a></li>
+                <li><a href="#">Пункт 3</a></li>
+            </ul>
+            <p class="center">Copyright 2019</p>
+        </footer>
+    </div>
+</body>
+</html>
