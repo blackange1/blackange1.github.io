@@ -1,0 +1,165 @@
+h1, h2, h3{
+  font-weight: bold;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  padding: 3rem;
+  font-size: 2.7rem; 
+}
+h3{
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+p{
+  font-size: .8rem;
+}
+.content-colum{
+  padding: 2rem 4.6rem;
+}
+h1, h2, h3, .taem div p a{
+  color: #00f;
+}
+header, .img-colum, footer{
+  background-color: #00f;
+}
+h1, h2, h3, p, a {
+  font-family: 'Neucha', cursive;
+}
+@media (min-width:992px){
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+nav{
+  min-height: 2.3rem;
+}
+.conteiner-logo{
+  float: left;
+  display: flex;
+  align-self: center;
+}
+.logo{
+  height: 80px;
+}
+.menu{
+  list-style-type: none;
+  padding-left: 0;
+}
+.menu-item{
+  font-size: 1.5rem;  
+  float: right;
+  padding: 2.3rem 0;
+  margin-left: 2rem;
+  color: #fff;
+}
+.menu-item:hover{
+  color: white;
+  text-decoration: none;
+  padding: 2rem 0;
+  border-top: 0.3rem solid white;
+  border-bottom: 0.3rem solid white;
+}
+.mobile-menu-button{
+  border-width: 0;
+  margin: 1.2rem 0;
+  float: right;
+}
+@media screen and (min-width: 641px){
+  .nav-item{
+    display: inline-block;
+  }
+  .mobile-menu-button
+  {
+    display: none;
+  }
+}
+.slider-title{
+  background-color: rgba(225, 225, 225, 0.75);
+  margin: 7rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.slick-dots{
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2.5rem;
+}
+.slick-dots li{
+  z-index: 50;
+}
+.slick-dots li button{
+  font-size: 0;
+  background-color: #C6BCB4; 
+  width: 17px;
+  height: 17px;
+  border: 1px solid #00f;
+  border-radius: 9px;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+.slick-dots .slick-active button{
+  background-color: white;
+}
+.img-colum{
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-colum img{
+  width: 7rem;
+}
+.content-colum p{
+  margin-bottom: 3rem;
+}
+.read-more{
+  border: 0.2rem solid #00f;
+  text-transform: uppercase;
+  padding: 0.2rem 2.4rem;
+  color: #00f;
+  font-size: 1rem;
+}
+.nav-heigth{
+  display: inline-block;
+}
+.taem div img{
+  width: 180px;
+  border-radius: 90px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+@media (min-width:992px){
+  .medium-pull-6 {
+    position: relative; 
+    left: -50%;
+  }
+  .medium-push-6 {
+    position: relative; 
+    left: 50%;
+  }
+  .taem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.taem div p a{ 
+  font-size: 1.8rem;
+}
+footer{
+  padding: 2rem;
+}
+footer p{
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+}
