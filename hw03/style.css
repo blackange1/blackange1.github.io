@@ -1,0 +1,84 @@
+body{
+	font-family: Arial;
+}
+.global{
+	max-width: 624px;
+	margin: 0 auto;
+}
+header{
+	font-size: 1.1rem;
+	padding: 1rem 0;
+	color: grey;
+	display: flex;
+	justify-content: space-between;
+}
+.number-tovar{
+	margin-left: 1rem;
+}
+main{
+	border: 1px solid grey;
+	padding: 2rem 4rem;
+}
+h1{
+	text-align: center;
+	font-size: 3rem;
+	color: #3583B0;
+	margin-top: 0;
+	margin-bottom: 3rem;
+}
+.bottom-line{
+	border-bottom: 1px solid #3583B0;
+}
+.slider-component img{
+	margin-right: 1.5rem;
+	width: 30px;
+}
+.slider-img-main{
+	margin-bottom: 1.5rem;
+}
+.description{
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+ul{
+	padding-left: 0;
+	list-style-type: none;
+	margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 640px){
+	.slider {
+		margin-bottom: 2rem;
+	}
+}
+@media screen and (min-width: 640px){
+	.slider, .description{
+		float: left;
+		width: 50%;
+	}
+	.description{
+		padding: 0 1rem;
+	}
+	.mini-description{
+		clear: both;
+		padding-top: 2rem;
+	}
+}
+
+.properties{
+	border-bottom: 1px solid grey;
+	font-weight: bold;
+}
+.mini-description .title{
+	font-size: .8rem;
+	border-bottom: 1px solid grey;
+	width: 98%;
+}
+.mini-description .content, .description ul{
+	font-size: .75rem;
+}
+.mini-description .more, footer{
+	font-size: .7rem;
+}
+.mini-description .more a{
+	color: #5194BB;
+}
