@@ -34,7 +34,7 @@ h1{
 	font-size: 1.7rem;
 	width: 120px;
 	height: 120px;
-	border-radius: 60px;
+	border-radius: 60px; 
 	color: white;
 	display: flex;
 	justify-content: center;
@@ -42,6 +42,7 @@ h1{
 	text-align: center;
 	margin-top: -5rem;
 	margin-left: -3rem;
+	transition: background-color 1s;
 }
 .bottom-line{
 	border-bottom: 1px solid #3583B0;
@@ -49,9 +50,21 @@ h1{
 .slider-component img{
 	margin-right: 1.5rem;
 	width: 30px;
+	transition: margin-right .3s;
 }
 .slider-img-main{
+	width: 220px;
 	margin-bottom: 1.5rem;
+	transition: width .3s;
+}
+.slider:hover .slider-img-main{
+	width: 240px;
+}
+.slider:hover .discount{
+	background-color: rgba(255,0,0,.5);
+}
+.slider:hover .slider-component img{
+	margin-right: 1.7rem;
 }
 .description{
 	font-size: 1rem;
@@ -98,4 +111,9 @@ ul{
 }
 .mini-description .more a{
 	color: #5194BB;
+	word-wrap: break-word;
+	transition: color 1s;
+}
+.mini-description .more a:hover{
+	color: blue;
 }
