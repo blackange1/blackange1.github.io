@@ -3,22 +3,23 @@
 
 
   $(document).ready(function () {
-    
-    (function ($) {
 
-      
+      $("a[rel='m_PageScroll2id']").mPageScroll2id({
+        offset:50
+      });
+
       // Mobile menu
       $('.mobile-menu-button').on('click', function() {
-        $('.menu').toggleClass('collapse');
+        $('.mainNav__items').toggleClass('collapse');
       });
 
       // Scripts which runs at window resize
       $(window).resize(function () {
-        if ( $(window).width() > 640 ) {
-          $('.menu').removeClass('collapse');
+        if ( $(window).width() > 720 ) {
+          $('.mainNav__items').removeClass('collapse');
           //$('.searchform').removeClass('collapse');
         } else {
-          $('.menu').addClass('collapse');
+          $('.mainNav__items').addClass('collapse');
           //$('.searchform').addClass('collapse');
 
         }
@@ -53,11 +54,12 @@
         nextArrow: '<i class="fas fa-chevron-right fa-2x slick-next"></i>',
       });
 
-    }(jQuery));
+
   });
 
 
   $(window).load(function () {
+    
     
   });
 

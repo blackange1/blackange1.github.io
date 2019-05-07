@@ -4,6 +4,7 @@
 body, textarea, input {
     //font-style: italic;
     font-family: 'Roboto', sans-serif;
+    resize: none;
 }
 h1,
 h2,
@@ -107,6 +108,7 @@ hr{
 .mainNav__items {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .mainNav__item {
     padding: 10px;
@@ -204,7 +206,7 @@ li.slick-active {
     padding-top: 4rem;
 }
 .expertiseContent__item{
-
+    
 }
 .expertiseContent__title{
 
@@ -260,10 +262,10 @@ li.slick-active {
     justify-content: space-between;
 }
 .siteSection-works__textLeft{
-
+    padding-left: .5rem;
 }
 .siteSection-works__textRight{
-    
+    padding-right: .5rem;
 }
 .siteSection-works__gallery{
     margin: 3rem 0 1rem 0;
@@ -363,7 +365,7 @@ li.slick-active {
 
 
 .mainFooter{
-    padding: 3rem 0;
+    padding: 3rem 1rem;
 }
 .mainFooter__logo{
 
@@ -424,6 +426,7 @@ li.slick-active {
 }
 .endFooterMenu__item{
     margin-right: 2rem;
+    text-align: center;
 }
 .endFooterMenu__link{
     color: white;
@@ -434,4 +437,54 @@ li.slick-active {
     width: 50%;
     text-align: right;
     font-size: .9rem;
+}
+
+/*adaptability*/
+.fa-bars{
+    color: #fff;
+    margin-right: 1rem;
+    display: none;
+}
+@media screen and (max-width: 720px){
+    .mainHeader__logo{
+        margin-left: 2rem;
+    }
+    .mainNav__items{
+        //display: none;
+        background-color: rgba(200, 200, 200, 0.2);
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .fa-bars{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+    }
+    .siteSection-contact__leftBlock{
+        padding-top: 65px;
+    }
+    .siteSection-contact__form .siteSection-contact__Input,
+    .siteSection-contact__textarea
+    {
+        width: 100%;
+    }
+    .mainFooter{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 540px){
+    .endFooter{
+        flex-direction: column;
+    }
+    .endFooterMenu{
+        width: 100%;
+    }
+    .endFooter__copyright{
+        width: 100%;
+        padding-top: 1rem;
+        text-align: left;
+    }
+}
+.collapse{
+    display: none;
 }

@@ -13,33 +13,35 @@
   <link href="css/bootstrap-grid.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div clase="bgImage" style="background-image: url(img/bgFond01.jpg); background-size: cover;">
     <section class="siteSection siteSection-header bgGradient">
       <div class="wrapper">
-        <header class="mainHeader">
-          <div class="mainHeader__logo">
+        <header class="mainHeader row" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="mainHeader__logo col-md-2">
             <a href="#"><img src="img/logo.png" alt="main logo"></a>
           </div>
+          <i class="fas fa-bars fa-3x mobile-menu-button"></i>
           <!-- /.mainHeader__logo -->
-          <nav class="mainNav">
+          <nav class="mainNav col-md-10">
             <ul class="mainNav__items">
-              <li class="mainNav__item mainNav__item-active"><a href="#">Home</a></li>
-              <li class="mainNav__item"><a href="#">About</a></li>
-              <li class="mainNav__item"><a href="#">Expertise</a></li>
-              <li class="mainNav__item"><a href="#">Teams</a></li>
-              <li class="mainNav__item"><a href="#">Works</a></li>
-              <li class="mainNav__item"><a href="#">People say</a></li>
-              <li class="mainNav__item"><a href="#">Contact</a></li>
+              <li class="mainNav__item mainNav__item-active"><a href="#home" rel='m_PageScroll2id'>Home</a></li>
+              <li class="mainNav__item"><a href="#about" rel='m_PageScroll2id'>About</a></li>
+              <li class="mainNav__item"><a href="#expertise" rel='m_PageScroll2id'>Expertise</a></li>
+              <li class="mainNav__item"><a href="#teams" rel='m_PageScroll2id'>Teams</a></li>
+              <li class="mainNav__item"><a href="#works" rel='m_PageScroll2id'>Works</a></li>
+              <li class="mainNav__item"><a href="#people_say" rel='m_PageScroll2id'>People say</a></li>
+              <li class="mainNav__item"><a href="#contact" rel='m_PageScroll2id'>Contact</a></li>
             </ul>
             <!-- /.mainNav__lists -->
           </nav>
           <!-- /.mainNav -->
         </header>
         <!-- /.mainHeader -->
-        <div class="slider slider-header">
-          <div class="slider__content">
+        <div class="slider slider-header" id="home">
+          <div class="slider__content" data-aos="fade-up" data-aos-duration="1500">
             <ul class="slider__items">
               <li class="slider__item">
                 <h1 class="mainTitle">We Are Awesome Creative Agency</h1>
@@ -108,8 +110,8 @@
      <!-- /.siteSection siteSection-header -->
   </div>
   <!--bgImage-->
-  <section class="siteSection siteSection-about">
-    <div class="wrapper row">
+  <section class="siteSection siteSection-about" id="about">
+    <div class="wrapper row" >
       <div class="about__logo col-md-5">
         <img src="img/replace_with_yoor_logo.jpg" alt="replace with yoor logo">
       </div>
@@ -131,7 +133,7 @@
       <h2 class="aboutVideo__title">WATCH OUR STORY</h2>
     </section>
   </div>
-  <section class="siteSection siteSection-expertise">
+  <section class="siteSection siteSection-expertise" id="expertise">
     <div class="wrapper">
       <h2 class="siteSection-expertise__title">EXPERTISE</h2>
       <p class="siteSection-expertise__subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
@@ -192,7 +194,7 @@
   </section>
   <!--siteSection-expertise-->
   <div clase="bgImage" style="background-image: url(img/bgFond01.jpg); background-size: cover;">
-    <section class="siteSection siteSection-team bgGradient">
+    <section class="siteSection siteSection-team bgGradient" id="teams">
       <div class="wrapper">
         <h2 class="siteSection-team__title">MEET OUR AMAZING TEAM</h2>
         <p class="siteSection-team__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
@@ -227,7 +229,7 @@
     </section>
   </div>
   <!--bgImage-->
-  <section class="siteSection siteSection-works">
+  <section class="siteSection siteSection-works" id="works">
     <div class="wrapper">
       <h2 class="siteSection-works__textLeft">OUR WORKS</h2>
       <p class="siteSection-works__textRight">See All Project in dribbble</p>
@@ -254,7 +256,7 @@
     <button class="mainBtn">LOAD MORE</button>
   </section>
   <div clase="bgImage" style="background-image: url(img/bgFond03.jpg); background-size: cover;">
-    <section class="siteSection siteSection-testimonials bgGradient">
+    <section class="siteSection siteSection-testimonials bgGradient" id="people_say">
       <div class="wrapper slider-testimonials">
         <div class="slider-testimonials__content">
           <i class="fas fa-quote-left fa-2x"></i>
@@ -300,7 +302,7 @@
     </section>
   </div>
   <!--bgImage-->
-  <section class="siteSection siteSection-contact">
+  <section class="siteSection siteSection-contact" id="contact">
     <div class="wrapper row">
       <div class="col-md-7">
         <form action="" class="siteSection-contact__form">
@@ -312,7 +314,7 @@
           <input type="submit" class="mainBtn siteSection-contact__submit" value="submit">
         </form>
       </div>
-      <div class="col-md-5">
+      <div class="siteSection-contact__leftBlock col-md-5">
         <h2 class="siteSection-contact__title">OUR HAPPY CLIENT</h2>
         <div class="siteSection-contact__imgs">
           <div class="siteSection-contact__imgsWrapper">
@@ -394,6 +396,11 @@
   <script src="js/jquery-3.4.0.js"></script>
   <script type="text/javascript" src="js/slick.js"></script>
   <script src="js/jquery.matchHeight-min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
