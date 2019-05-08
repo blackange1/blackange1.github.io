@@ -449,7 +449,12 @@ li.slick-active {
     .mainHeader__logo{
         margin-left: 2rem;
     }
+	.mainNav{
+		position: absolute;
+		top: 3rem;
+	}
     .mainNav__items{
+		
         //display: none;
         background-color: rgba(200, 200, 200, 0.2);
         justify-content: center;
