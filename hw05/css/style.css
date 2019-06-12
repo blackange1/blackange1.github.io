@@ -2,7 +2,6 @@
 *font
 */
 body, textarea, input {
-    //font-style: italic;
     font-family: 'Roboto', sans-serif;
     resize: none;
 }
@@ -449,8 +448,11 @@ li.slick-active {
     .mainHeader__logo{
         margin-left: 2rem;
     }
+	.mainNav{
+		position: absolute;
+		top: 3rem;
+	}
     .mainNav__items{
-        //display: none;
         background-color: rgba(200, 200, 200, 0.2);
         justify-content: center;
         flex-wrap: wrap;
