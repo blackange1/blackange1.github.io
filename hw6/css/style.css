@@ -1,0 +1,147 @@
+#deleteItem, #edit{
+	position: absolute;
+	top: 40%;
+	padding: 1rem 2rem;
+	background-color: #EEEEEE;
+	display: none;
+}
+#deleteItem{
+	left: 45%;
+}
+#edit{
+	left: 40%;
+}
+#text-center{
+	text-align: center;
+}
+#deleteNo,
+#deleteYes,
+#editCancel,
+#editSave
+{
+	padding: 1rem 2rem;
+}
+#deleteNo,
+#editCancel
+{
+	color: #0097F4;
+}
+#deleteYes,
+#editSave
+{
+	background-color: #0097F4;
+	color: #fff;
+	border-width: 0; 
+}
+.form{
+	padding: 2rem;
+}
+td{
+	padding: .5rem;
+}
+i{
+	color: #9C9696;
+}
+.tdOne{
+	width: 10%;
+}
+.tdTwo{
+	width: 5%;
+}
+.tdThree{
+	width: 5%;
+}
+.tdFive{
+
+}
+.tdSix{
+	width: 15%;
+}
+.todoThead{
+	text-align: center;
+	padding-bottom: 2rem;
+}
+.todoTable{
+	width: 80%;
+	text-align: center;
+}
+.todoTable__tr{
+	margin-bottom: 1rem;
+}
+.todoTable__inputAdd{
+	width: 100%;
+	padding: .5rem;
+	border-width: 0;
+	border-bottom: 1px solid #E5E5E5;  
+}
+.todoTable__inputAdd::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #D0D2CE; 
+} 
+  
+.todoTable__inputAdd:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #D0D2CE; 
+} 
+  
+.todoTable__inputAdd::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #D0D2CE; 
+} 
+.todoTable__buttonAdd{
+	padding: .4rem 2rem;
+	color: white;
+	background-color: #0097F4;
+	border-color: #0097F4;
+	border-radius: 4px;
+	font-weight: 900; 
+}
+.fa-search{
+	width: 9%;
+}
+.fa-caret-up,
+.fa-caret-down{
+	color: #0097F4;
+}
+.todoTable__time{
+	font-size: .8rem;
+}
+.todoTable__inputSearch{
+	width: 88%;
+	padding: .3rem;
+	border-width: 0;
+	border-bottom: 1px solid #E5E5E5;  	
+}
+.todoTable__priority{
+}
+.todoTable__priorityBlock{
+	background-color: #717171;
+	color: white;
+	padding: .5rem;
+}
+.todoTable__textBlock{
+	text-align: left;
+}
+.todoTable__text{
+	background-color: #D1EEF4;
+	border-radius: .2rem;
+	padding: .5rem;
+}
+.todoTable__shell i{
+	color: white;	
+}
+.todoTable__shell{
+	display: inline-block;
+	padding: .5rem;
+	margin-right: .5rem;
+	border-radius: 3rem;
+}
+.todoTable__shell--green{
+	background-color: #3F8C3F;
+}
+.todoTable__shell--light-blue{
+	background-color: #77CBFB;
+}
+.todoTable__shell--blue{
+	background-color: #0097F4;
+}
+.good{
+	background-color: #EEEEEE;
+}
