@@ -1,3 +1,7 @@
+.buttonSearch{
+	background-color: #fff;
+	border-width: 0;	
+}
 #deleteItem, #edit{
 	position: absolute;
 	top: 40%;
@@ -33,11 +37,15 @@
 	color: #fff;
 	border-width: 0; 
 }
-.form{
-	padding: 2rem;
+.mainForm{
+
 }
 td{
 	padding: .5rem;
+}
+.button-none{
+	background-color: #fff;
+	border-width: 0;
 }
 i{
 	color: #9C9696;

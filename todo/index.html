@@ -13,31 +13,38 @@
 		<button id="deleteNo" type="button">NO</button>
 		<button id="deleteYes" type="button">YES</button>
 	</div>
-	<div id="edit">
-		<p class="text-center">Edit text</p>
-		<textarea name="editContent" id="editContent" cols="30" rows="10">edit text...</textarea><br>
-		<button id="editCancel" type="button">CANCEL</button>
-		<button id="editSave" type="button">SAVE</button>
-	</div>
-	<form class="form" action="test.php" method="get">
+	<form id="editForm" class="editForm" action="test2.php" method="get">
+		<div id="edit">
+			<p class="text-center">Edit text</p>
+			<textarea name="editContent" id="editContent" cols="30" rows="10">edit text...</textarea><br>
+			<button id="editCancel" type="button">CANCEL</button>
+			<input id="editSave" type="submit" value="SAVE">
+		</div>
+	</form>
 		<div class="todoThead">TODO LIST</div>
 		<table class="todoTable">
-			<tbody id ="tbody">
+			<tbody>
 				<tr>
-					<td></td>
-					<td colspan="3"><input class="todoTable__inputAdd" type="text" placeholder="Task" name="newTodo"></td>
-					<td><input class="todoTable__buttonAdd" type="submit" value="ADD"></td>
+					<form id="mainForm" class="mainForm" action="test.php" method="get">
+						<td></td>
+						<td colspan="3"><input class="todoTable__inputAdd" type="text" placeholder="Task" name="newTodo"></td>
+						<td><input class="todoTable__buttonAdd" type="submit" value="ADD"></td>
+					</form>
 				</tr>
 				<tr>
-					<td class="tdOne"><i class="fas fa-sort fa-2x"></i></td>
-					<td class="tdTwo"><i class="fas fa-sort-amount-down fa-2x"></i></td>
+					<td class="tdOne" onclick="filterDate();"><i class="fas fa-sort fa-2x"></i></td>
+					<td class="tdTwo" onclick="filterPriori();"><i class="fas fa-sort-amount-down fa-2x"></i></td>
 					<td class="tdThree"></td>
 					<td class="tdFive">
-						<i class="fas fa-search"></i>
-						<input class="todoTable__inputSearch" type="text" placeholder="">
+						<form class="searchForm" action="search.php">
+							<button class="buttonSearch" type="submit"><i class="fas fa-search"></i></button>
+							<input name="searchInput" class="todoTable__inputSearch" type="text" placeholder="">
+						</form>
 					</td>
 					<td class="tdSix"><i class="fas fa-filter fa-2x"></i></td>
 				</tr>
+			</tbody>
+			<tbody id ="tbody">
 				<!--<tr>
 					<td class="todoTable__dateAndTime">
 						<span class="todoTable__date">12.06.2009</span><br>
@@ -60,7 +67,6 @@
 			<script src="js/main.js"></script>
 			</tbody>
 		</table>
-	</form>
 
 	<!--<form action="">
 		<p>TODO LIST</p>
