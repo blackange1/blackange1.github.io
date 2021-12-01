@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+h1, h2{
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+    text-shadow: 2px 2px #000;;
+
+}
+hr{
+    height: 20px;
+    background-color: #5F340D;
+}
+.wrapper{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+header{
+
+}
+/* .main_question{
+    position: absolute;
+    top: 50px;
+    font-size: 60px;
+    text-shadow: 2px 2px #000;;
+} */
+.sub_menu{
+    position: fixed;
+    top: 150px;
+    /* margin-left: 1750px; */
+    padding: 0;
+}
+.menu_item{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 10px;
+    border: 2px solid #363949ff;
+    border-radius: 50%;
+}
+.menu_link{
+    width: 20px;
+    height: 20px;
+}
+main{
+    background-color: #c1c1c1;
+}
+.tw_wraper{}
+.tw_border{
+    border: 20px solid #666;
+    width: 560px;
+    border-radius: 10px;
+}
+#clock{
+    position: -webkit-sticky ;
+    position: sticky !important;
+    top: 20px;
+    background: #578;
+    z-index: 1000;
+}
