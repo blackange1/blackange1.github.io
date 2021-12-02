@@ -205,3 +205,20 @@ footer{
 .footer_img{
     padding-left: 40px;
 }
+
+@media screen and (max-width: 1200px) {
+    menu {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .flex{
+        flex-direction: column;
+    }
+    #clock,
+    .hide
+    {
+        display: none;
+    }
+}
