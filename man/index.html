@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header id="header"=>
+        <header id="header">
             <img id="img_header" class="uk-hidden" src="img/img_header_0.svg" alt="">
             <img id="img_header_next" src="img/img_header_1.svg" alt="">
             <!-- <h1 class="main_question uk-position-center">Вакцинуватися?</h1> -->
@@ -28,10 +28,10 @@
             <a class="menu_link" href="#section_6" uk-scroll><li class="menu_item"></li></a>
             
         </ul>
-        <menu class="uk-flex uk-flex-between">
+        <menu class="uk-flex uk-flex-between uk-text-center hide">
             <div>Життя у спокої</div>
             <div>←</div>
-            <div>А що обераєш ти?</div>
+            <div>А що обираєш ти?</div>
             <div>→</div>
             <div>Життя у страху</div>
         </menu>
@@ -47,7 +47,7 @@
                     <div class="col-5">
                         <h2 class="uk-text-center">Довіра</h2>
                         <h3 style="color: #6B3A0D;">Хочеш жити і не боятися-бери участь у вакцинації!</h3>
-                        <div class="tv_wraper">
+                        <div class="tv_wraper hide">
                             <div class="tv_border">
                                 <iframe width="466" height="262" src="https://www.youtube.com/embed/DwVJsacaIYY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -84,7 +84,7 @@
                             </p>
                         </div>
                         <h3 style="color: #6B3A0D;">Вижити - не значить одужати!</h3>
-                        <div class="tv_wraper">
+                        <div class="tv_wraper hide">
                             <div class="tv_border">
                                 <iframe width="466" height="262" src="https://www.youtube.com/embed/iJ-mqBCQ-34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -236,7 +236,8 @@
                         <li><a class="modal_link" href="#modal-moderna" uk-toggle>Moderna</a></li>
                         <li><a class="modal_link" href="#modal-astrazeneca" uk-toggle>AstraZeneca</a></li>
                         <li><a class="modal_link" href="#modal-coronavac" uk-toggle>Coronavac/Sinovac Biotech</a></li>
-                        <li><a class="modal_link" href="#modal-comirnaty" uk-toggle>Comirnaty/Pfizer-BioNTech</a></li>
+                        <li><a class="modal_link" href="./pdf/Pfizer_BioNTech.pdf">Comirnaty/Pfizer-BioNTech</a></li>
+                        <!-- <li><a class="modal_link" href="#modal-comirnaty" uk-toggle>Comirnaty/Pfizer-BioNTech</a></li> -->
                     </ul>
                 </div>
                 <div class="col-2 space_between">
@@ -283,10 +284,10 @@
 
                 <div class="batton_wraper">
                     <div class="main_batton">
-                        <a class="link_batton" href="#">ОБЕРИ НАЙБЛИЖЧИЙ ПУНКТ ВАКЦИНАЦІЇ</a>
+                        <!-- <a class="link_batton" href="#">ОБЕРИ НАЙБЛИЖЧИЙ ПУНКТ ВАКЦИНАЦІЇ</a> -->
+                        <a class="link_batton" href="#get_point" uk-toggle>ОБЕРИ НАЙБЛИЖЧИЙ ПУНКТ ВАКЦИНАЦІЇ</a>
                     </div>
                 </div>
-                
             </div>
         <hr>
 
@@ -308,34 +309,341 @@
     <div id="modal-moderna" class="uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h2 class="uk-modal-title">Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 class="uk-modal-title">Moderna</h2>
+            <p>
+                <a href="https://www.who.int/news-room/feature-stories/detail/the-moderna-covid-19-mrna-1273-vaccine-what-you-need-to-know">Стратегічна консультативна група експертів</a> ВООЗ <a href="https://www.who.int/groups/strategic-advisory-group-of-experts-on-immunization/working-groups/cholera-(november-2015---august-2017)">(SAGE)</a> випустила проміжні рекомендації щодо використання вакцини Moderna COVID-19 (мРНК-1273) проти COVID-19. У цій статті наведено короткий виклад цих проміжних рекомендацій; Ви можете отримати доступ до повного посібника 
+                <a href="https://www.who.int/publications/i/item/interim-recommendations-for-use-of-the-moderna-mrna-1273-vaccine-against-covid-19">тут</a>.
+            </p>
+            <p>Ось що вам потрібно знати.</p>
+            <h3>Кому потрібно зробити щеплення в першу чергу?</h3>
+            <p>Як і у випадку з усіма вакцинами проти COVID-19, медичні працівники з високим ризиком зараження та літні люди повинні мати пріоритет для вакцинації.</p>
+            <p>Оскільки вакцина стає доступною, слід вакцинувати додаткові пріоритетні групи, приділяючи увагу людям, які непропорційно постраждали від COVID-19 або стикаються з несправедливістю у здоров’ї.</p>
+            <h3>Хто ще може приймати вакцину?</h3>
+            <p>Супутні захворювання, які вивчалися в ході клінічного дослідження фази 3, включали хронічне захворювання легенів, значне захворювання серця, важке ожиріння, цукровий діабет, захворювання печінки та інфекцію вірусу імунодефіциту людини (ВІЛ). Вакцинація рекомендована особам із такими супутніми захворюваннями, які підвищують ризик важкої форми COVID-19.</p>
+            <p>Хоча для осіб з імунодефіцитом необхідні подальші дослідження, люди цієї категорії, які входять до групи, рекомендованої для вакцинації, можуть бути вакциновані після отримання інформації та консультацій.</p>
+            <p>Люди, які живуть з ВІЛ, піддаються підвищеному ризику важкої хвороби COVID-19. Відомим ВІЛ-позитивним одержувачам вакцини слід надавати інформацію та консультувати.</p>
+            <p>Вакцинацію можна запропонувати людям, які в минулому хворіли на COVID-19. Але люди можуть забажати відкласти власну вакцинацію від COVID-19 на термін до шести місяців з моменту зараження SARS-CoV-2.</p>
+            <p>Очікується, що ефективність вакцини у жінок, що годують груддю, буде такою ж, як і у інших дорослих. ВООЗ рекомендує використовувати вакцину жінкам у період лактації, як і іншим дорослим. ВООЗ не рекомендує припиняти грудне вигодовування через вакцинацію.</p>
+            <h3>Чи варто робити щеплення вагітним?</h3>
+            <p>ВООЗ рекомендує використовувати вакцину проти COVID-19 вагітним жінкам, коли користь від вакцинації для вагітної жінки перевищує потенційний ризик. Щоб допомогти вагітним жінкам зробити цю оцінку, їм слід надати інформацію про ризики COVID-19 під час вагітності, ймовірні переваги вакцинації в місцевому епідеміологічному контексті та поточні обмеження даних щодо безпеки для вагітних жінок. ВООЗ не рекомендує проводити тест на вагітність перед вакцинацією. ВООЗ не рекомендує відкладати вагітність або переривати вагітність через вакцинацію.</p>
+            <h3>Кому не слід приймати вакцину?</h3>
+            <p>Особам із тяжкою алергічною реакцією на будь-який компонент вакцини в анамнезі не слід приймати цю чи будь-яку іншу мРНК-вакцину.</p>
+            <p>Хоча вакцинація рекомендована літнім людям через високий ризик важкої форми COVID-19 і смерті, дуже слабких літніх людей з очікуваною тривалістю життя менше 3 місяців слід оцінювати індивідуально.</p>
+            <p>Вакцину не слід вводити особам молодше 18 років до отримання результатів подальших досліджень.</p>
+
+            <h3>Яка рекомендована дозування?</h3>
+            <p>SAGE рекомендує використовувати вакцину мРНК-1273 Moderna за схемою введення двох доз (100 мкг, 0,5 мл кожна) з інтервалом у 28 днів. При необхідності інтервал між прийомами можна збільшити до 42 днів.</p>
+            <p>Дослідження показали високий вплив на здоров’я населення, коли інтервал був довший, ніж рекомендований EUL. Відповідно, країни, які стикаються з високим рівнем захворюваності на COVID-19 у поєднанні з серйозними обмеженнями в постачаннях вакцин, можуть розглянути можливість відстрочення другої дози до 12 тижнів, щоб досягти більшого охоплення першою дозою в популяціях з високим пріоритетом. </p>
+            <p>Рекомендується дотримуватися повного розкладу, і для обох доз слід використовувати один і той же продукт.</p>
+
+            <h3>Чи безпечно?</h3>
+            <p>30 квітня ВООЗ внесла вакцину «Модерна» до списку для невідкладного використання. Перелік використання в надзвичайних ситуаціях (EUL) ВООЗ оцінює якість, безпеку та ефективність вакцин проти COVID-19 і є необхідною умовою для постачання вакцини COVAX Facility.</p>
+            <p>EMA ретельно оцінила дані про якість, безпеку та ефективність вакцини Moderna від COVID-19 і 
+                <a href=" ema.europa.eu/en/news/ema-recommends-covid-19-vaccine-moderna-authorisation-eu">дозволила її використання</a> в Європейському Союзі.</p>
+            <p>SAGE рекомендує спостерігати за всіма вакцинованими протягом щонайменше 15 хвилин після вакцинації. Тим, у кого відразу виникла важка алергічна реакція на першу дозу, не слід отримувати додаткові дози.</p>
+            <p>Довгострокова оцінка безпеки передбачає постійне спостереження за учасниками клінічних випробувань, а також конкретні дослідження та постійний нагляд за вторинними ефектами або побічними явищами у тих, хто вакцинується під час розгортання.</p>  
+            <p>
+                <a href="https://www.who.int/groups/global-advisory-committee-on-vaccine-safety">Глобальний консультативний комітет з безпеки вакцин</a>, група експертів, яка надає незалежні та авторитетні рекомендації ВООЗ на тему безпечного використання вакцин, отримує та оцінює повідомлення про підозрювані події безпеки потенційно міжнародного впливу. 
+            </p>
+            <h3>Наскільки ефективна вакцина?</h3>
+            <p>Було показано, що вакцина Moderna має ефективність приблизно на 94,1% у захисті від COVID-19, починаючи через 14 днів після першої дози.</p>
+
+            <h3>Чи працює це проти нових варіантів?</h3>
+            <p>Згідно з наявними доказами, нові варіанти SARS-CoV-2, включаючи B.1.1.7 і 501Y.V2, не змінюють ефективність мРНК-вакцини Moderna. Продовжується моніторинг, збір та аналіз даних про нові варіанти та їх вплив на ефективність діагностики, лікування та вакцин проти COVID-19.</p>
+
+            <h3>Чи запобігає він зараженню та передачі?</h3>
+            <p>Ми не знаємо, чи захистить вакцина від інфекції та захистить від подальшої передачі. Імунітет зберігається кілька місяців, але повна тривалість поки невідома. Ці важливі питання вивчаються.</p>
+            <p>Тим часом ми повинні підтримувати ефективні заходи охорони здоров’я: маскування, фізичне дистанціювання, миття рук, гігієна дихання та кашлю, уникнення скупчення людей та забезпечення хорошої вентиляції.</p>
+            <p class="uk-text-italic">Тим часом ми повинні підтримувати ефективні заходи охорони здоров’я: маскування, фізичне дистанціювання, миття рук, гігієна дихання та кашлю, уникнення скупчення людей та забезпечення хорошої вентиляції.</p>
+
+            <a href="https://www.who.int/news-room/feature-stories/detail/the-moderna-covid-19-mrna-1273-vaccine-what-you-need-to-know">Посилання на джерело інформації</a>
+
+
+
         </div>
     </div>
 
     <div id="modal-astrazeneca" class="uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h2 class="uk-modal-title">Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 class="uk-modal-title">AstraZeneca </h2>
+            <p>Стратегічна консультативна група експертів ВООЗ з імунізації (SAGE) випустила проміжні рекомендації щодо використання вакцини проти COVID-19 Oxford/AstraZeneca (AZD1222). </p>
+            <p>
+                У цій статті наведено короткий виклад проміжних рекомендацій; Ви можете отримати доступ до <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-vaccines-SAGE_recommendation-AZD1222-2021.1">посібника тут</a>. 
+            </p>
+            <h3>Кому потрібно зробити щеплення в першу чергу?</h3>
+            <p>Хоча запаси вакцин обмежені, рекомендується надавати перевагу медичним працівникам з високим ризиком зараження, а також літнім людям, включаючи людей у віці 65 років і старше.</p>
+            <p>
+                Країни можуть звернутися до 
+                <a href="https://www.who.int/publications/i/item/who-sage-roadmap-for-prioritizing-uses-of-covid-19-vaccines-in-the-context-of-limited-supply">Дорожньої карти ВООЗ щодо визначення пріоритетів</a> обмеженого постачання та 
+                <a href="https://www.who.int/publications/i/item/who-sage-values-framework-for-the-allocation-and-prioritization-of-covid-19-vaccination">Рамки цінностей ВООЗ</a> як керівництво щодо визначення пріоритетів цільових груп.
+            </p>
+            <h3>Хто ще може приймати вакцину?</h3>
+            <p>Вакцинація рекомендована людям із супутніми захворюваннями, які підвищують ризик важкої форми COVID-19, включаючи ожиріння, серцево-судинні захворювання, респіраторні захворювання та цукровий діабет. </p>
+            <p>Хоча для осіб, які живуть з ВІЛ або аутоімунними захворюваннями, чи мають імунодефіцит, необхідні подальші дослідження, люди цієї категорії, які входять до групи, рекомендованої для вакцинації, можуть бути вакциновані після отримання інформації та консультацій. </p>
+            <p>Вакцинацію можна запропонувати людям, які в минулому хворіли на COVID-19. Але люди можуть забажати відкласти власну вакцинацію від COVID-19 на термін до шести місяців з моменту зараження SARS-CoV-2, щоб дозволити іншим, яким вакцина може знадобитися терміново, почати першими.</p>
+            <p>Вакцинацію можна запропонувати жінкам, які годують груддю, якщо вони входять до групи, яка є пріоритетною для вакцинації. ВООЗ не рекомендує припиняти грудне вигодовування після вакцинації. </p>
+            <h3>Чи варто робити щеплення вагітним?</h3>
+            <p>Незважаючи на те, що вагітність ставить жінок під більш високий ризик важкої форми COVID-19, доступно дуже мало даних для оцінки безпеки вакцини під час вагітності. </p>
+            <p>Вагітні жінки можуть отримати вакцину, якщо користь від вакцинації вагітної жінки перевищує потенційний ризик вакцинації. </p>
+            <p>З цієї причини вагітні жінки з високим ризиком зараження SARS-CoV-2 (наприклад, медичні працівники) або які мають супутні захворювання, які підвищують ризик тяжкого захворювання, можуть бути вакциновані після консультації зі своїм лікарем.</p>
+            <h3>Кому вакцина не рекомендована?</h3>
+            <p>Людям з тяжкою алергічною реакцією на будь-який компонент вакцини в анамнезі не слід її приймати.</p>
+            <p>Вакцина не рекомендована особам молодше 18 років до отримання результатів подальших досліджень.</p>
+            <h3>Яка рекомендована дозування?</h3>
+            <p>Рекомендована доза становить дві дози внутрішньом’язово (по 0,5 мл кожна) з інтервалом від 8 до 12 тижнів. </p>
+            <p>Необхідні додаткові дослідження, щоб зрозуміти довготривалий потенційний захист після одноразової дози.  </p>
+            <h3>Чи безпечно?</h3>
+            <p>Дві версії вакцини – виробництва AstraZeneca-SKBio (Республіка Корея) та Інституту сироватки Індії – були внесені до списку ВООЗ для екстреного використання. Коли вакцина пройшла розгляд SAGE, вона пройшла перевірку Європейським агентством з лікарських засобів (EMA).</p>
+            <p>EMA ретельно оцінила дані про якість, безпеку та ефективність вакцини та рекомендувала надати умовну реєстраційну ліцензію людям віком від 18 років. </p>
+            <p>Глобальний консультативний комітет з безпеки вакцин, група експертів, яка надає незалежні та авторитетні рекомендації ВООЗ на тему безпечного використання вакцин, отримує та оцінює повідомлення про підозрювані події безпеки потенційно міжнародного впливу. </p>
+            <h3>Наскільки ефективна вакцина?</h3>
+            <p>Вакцина AZD1222 проти COVID-19 має ефективність 63,09% проти симптоматичної інфекції SARS-CoV-2.</p>
+            <p>Більш тривалі інтервали дозування в межах від 8 до 12 тижнів пов’язані з більшою ефективністю вакцини.</p>
+            <h3>Чи працює це проти нових варіантів?</h3>
+            <p>SAGE переглянула всі доступні дані щодо ефективності вакцини в умовах, що викликають занепокоєння. Наразі SAGE рекомендує використовувати вакцину AZD1222 відповідно до Дорожньої карти ВООЗ щодо визначення пріоритетів, навіть якщо в країні є варіанти вірусу. Країни повинні оцінювати ризики та вигоди, беручи до уваги свою епідеміологічну ситуацію.</p>
+            <p>Попередні висновки показують нагальну потребу в скоординованому підході до нагляду та оцінки варіантів та їх потенційного впливу на ефективність вакцини. Коли з’являться нові дані, ВООЗ відповідно оновлюватиме рекомендації. </p>
+            <h3>Чи запобігає він зараженню та передачі?</h3>
+            <p>Немає суттєвих даних щодо впливу AZD1222 на передачу або поширення вірусу.</p>
+            <p>Тим часом ми повинні підтримувати та посилювати заходи громадського здоров’я, які працюють: маскування, фізичне дистанціювання, миття рук, гігієна дихання та кашлю, уникнення скупчення людей та забезпечення хорошої вентиляції.</p>
+            <p>
+                Станом на 19 квітня 2021 року вакцина AstraZeneca є безпечною та ефективною для захисту людей від надзвичайно серйозних ризиків COVID-19, включаючи смерть, госпіталізацію та важкі захворювання. Прочитайте 
+                <a href="https://www.who.int/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)">заяву</a> Глобального консультативного комітету ВООЗ з безпеки вакцин щодо вакцини проти COVID-19 AstraZeneca від 16 квітня 2021 року , яка охоплює повідомлення про дуже рідкісні побічні ефекти. Рада міжнародних організацій медичних наук класифікує частоти небажаних явищ або ліків і вакцин наступним чином:
+            </p>
+            <ul>
+                <li>Дуже часто &#62; 1/10 </li>
+                <li>Поширені (часті) &#62; 1 / 100 і &#60; 1 / 10 </li>
+                <li>Нечасто (нечасто) &#62; 1 / 1000 і &#60; 1 / 100 </li>
+                <li>Рідко &#62; 1 / 10000 і &#60; 1 / 1000 </li>
+                <li>Дуже рідко &#60; 1/10000 </li>
+            </ul>
+
+
         </div>
     </div>
 
     <div id="modal-coronavac" class="uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h2 class="uk-modal-title">Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 class="uk-modal-title">Coronavac/Sinovac Biotech</h2>
+            <p><a href="https://www.who.int/groups/strategic-advisory-group-of-experts-on-immunization">Стратегічна консультативна група експертів</a>
+                ВООЗ <a href="https://www.who.int/groups/strategic-advisory-group-of-experts-on-immunization">(SAGE)</a> з імунізації випустила проміжні рекомендації щодо використання вакцини Sinovac-CoronaVac проти COVID-19. У цій статті наведено короткий виклад цих проміжних рекомендацій; Ви можете отримати доступ до повного посібника 
+                <a href="https://www.who.int/publications-detail-redirect/WHO-2019-nCoV-vaccines-SAGE_recommendation-Sinovac-CoronaVac-2021.1"> тут</a> .
+            </p>
+            <p>Ось що вам потрібно знати.</p>
+            <p>
+                У цій статті наведено короткий виклад проміжних рекомендацій; проміжні рекомендації та довідковий документ також доступні в <a href="https://www.who.int/groups/strategic-advisory-group-of-experts-on-immunization/covid-19-materials">Інтернеті</a>.
+            </p>
+            <h3>Кому потрібно зробити щеплення в першу чергу?</h3>
+            <p>Хоча запаси вакцини від COVID-19 обмежені, медичні працівники з високим ризиком зараження та літні люди повинні мати пріоритет для вакцинації.</p>
+            <p>
+                Країни можуть посилатися на <a href="https://www.who.int/publications/i/item/who-sage-roadmap-for-prioritizing-uses-of-covid-19-vaccines-in-the-context-of-limited-supply">Дорожню карту ВООЗ щодо визначення пріоритетів</a> та 
+                <a href="https://www.who.int/publications/i/item/who-sage-values-framework-for-the-allocation-and-prioritization-of-covid-19-vaccination"></a> Рамку цінностей ВООЗ як на вказівки щодо визначення пріоритетів цільових груп.
+            </p>
+            <p>Вакцина не рекомендована особам молодше 18 років до отримання результатів подальшого дослідження в цій віковій групі.</p>
+            <h3>Чи варто робити щеплення вагітним?</h3>
+            <p>Наявних даних щодо вакцини Sinovac-CoronaVac (COVID-19) для вагітних жінок недостатньо для оцінки ефективності вакцини або можливих ризиків, пов’язаних із застосуванням вакцини під час вагітності. Однак ця вакцина є інактивованою вакциною з ад’ювантом, який зазвичай використовується в багатьох інших вакцинах з добре задокументованим профілем безпеки, таких як вакцини проти гепатиту В і правця, у тому числі для вагітних жінок. Тому очікується, що ефективність вакцини Sinovac-CoronaVac (COVID-19) у вагітних жінок буде порівнянна з такою, що спостерігається у невагітних жінок такого ж віку. Очікується, що подальші дослідження оцінять безпеку та імуногенність у вагітних жінок.</p>
+            <p>Тим часом ВООЗ рекомендує використовувати вакцину Sinovac-CoronaVac (COVID-19) вагітним жінкам, коли користь від вакцинації для вагітної жінки перевищує потенційний ризик. Щоб допомогти вагітним жінкам зробити цю оцінку, їм слід надати інформацію про ризики COVID-19 під час вагітності; ймовірні переваги вакцинації в місцевому епідеміологічному контексті; і поточні обмеження даних щодо безпеки для вагітних жінок. ВООЗ не рекомендує проводити тест на вагітність перед вакцинацією. ВООЗ не рекомендує відкладати вагітність або розглядати питання про переривання вагітності через вакцинацію.</p>
+            <h3>Хто ще може приймати вакцину?</h3>
+            <p>Вакцинація рекомендована особам із супутніми захворюваннями, які підвищують ризик важкої форми COVID-19, включаючи ожиріння, серцево-судинні захворювання та респіраторні захворювання.</p>
+            <p>Вакцину можна запропонувати людям, які в минулому хворіли на COVID-19. Наявні дані показують, що симптоматичне повторне зараження малоймовірне у цих осіб протягом 6 місяців після природного зараження. Отже, вони можуть вирішити відкласти вакцинацію до кінця цього періоду, особливо коли постачання вакцини обмежене. У ситуаціях, де існують варіанти занепокоєння з ознаками втечі імунітету, може бути доцільною більш рання імунізація після інфекції.</p>
+            <p>Очікується, що ефективність вакцини у жінок, що годують груддю, буде такою ж, як і у інших дорослих. ВООЗ рекомендує використовувати вакцину проти COVID-19 Sinovac-CoronaVac жінкам у період лактації, як і іншим дорослим. ВООЗ не рекомендує припиняти грудне вигодовування після вакцинації.</p>
+            <p>Люди, які живуть з вірусом імунодефіциту людини (ВІЛ) або мають ослаблений імунітет, піддаються підвищеному ризику важкої хвороби COVID-19. Такі особи не були включені до клінічних випробувань, які інформували про огляд SAGE, але, оскільки це вакцина, що не реплікується, люди, які живуть з ВІЛ або мають ослаблений імунітет, і є частиною рекомендованої групи для вакцинації, можуть бути вакциновані. Інформацію та консультування, де це можливо, слід надавати для оцінки індивідуальної вигоди та ризику.</p>
+            <h3>Кому вакцина не рекомендована?</h3>
+            <p>Особам з анафілаксією до будь-якого компонента вакцини в анамнезі не слід її приймати.</p>
+            <p>Особи з гострим ПЛР-підтвердженим COVID-19 не повинні вакцинуватися до тих пір, поки вони не одужали від гострого захворювання і не будуть виконані критерії припинення ізоляції.</p>
+            <p>Усім, у кого температура тіла вище 38,5°C, слід відкласти вакцинацію, доки у них не зникне температура.</p>
+            <h3>Яка рекомендована дозування?</h3>
+            <p>SAGE рекомендує використовувати вакцину Sinovac-CoronaVac у вигляді 2 доз (0,5 мл) внутрішньом’язово. ВООЗ рекомендує інтервал у 2–4 тижні між першою та другою дозою. Усім вакцинованим особам рекомендується отримувати дві дози.</p>
+            <p>Якщо другу дозу вводять менше ніж через 2 тижні після першої, повторювати дозу не потрібно. Якщо введення другої дози відкладається більше ніж на 4 тижні, її слід ввести якомога раніше.</p>
+            <h3>Як ця вакцина порівнюється з іншими вакцинами, які вже використовуються?</h3>
+            <p>Ми не можемо безпосередньо порівнювати вакцини через різні підходи, використані при розробці відповідних досліджень, але в цілому всі вакцини, які внесені до списку ВООЗ у надзвичайних ситуаціях, є високоефективними для запобігання тяжким захворюванням та госпіталізації через COVID-19.</p>
+            <h3>Чи безпечно?</h3>
+            <p>Компанія SAGE ретельно оцінила дані щодо якості, безпеки та ефективності вакцини та рекомендувала її використовувати людям віком від 18 років.</p>
+            <p>Наразі дані щодо безпеки обмежені для осіб старше 60 років (через невелику кількість учасників клінічних досліджень).</p>
+            <p>Хоча не можна очікувати відмінностей у профілі безпеки вакцини у літніх людей порівняно з молодшими віковими групами, країни, які розглядають можливість використання цієї вакцини для осіб старше 60 років, повинні підтримувати активний моніторинг безпеки.</p>
+            <p>Як частина процесу EUL, Sinovac зобов’язується продовжувати надавати дані про безпеку, ефективність та якість у поточних випробуваннях вакцин та їх розгортанні серед населення, у тому числі серед літніх людей.</p>
+            <h3>Наскільки ефективна вакцина?</h3>
+            <p>Велике дослідження фази 3 у Бразилії показало, що дві дози, введені з інтервалом у 14 днів, мали ефективність 51% проти симптоматичної інфекції SARS-CoV-2, 100% проти важкої форми COVID-19 і 100% проти госпіталізації, починаючи з 14. днів після отримання другої дози.</p>
+            <h3>Чи працює він проти нових варіантів вірусу SARS-CoV-2?</h3>
+            <p>У обсерваційному дослідженні оцінена ефективність Sinovac-CoronaVac у медичних працівників у Манаусі, Бразилія, де P.1 становила 75% зразків SARS-CoV-2, становила 49,6% проти симптоматичної інфекції (4). Ефективність також була показана в обсерваційному дослідженні в Сан-Паулу за наявності циркуляції Р1 (83% зразків).</p>
+            <p>Оцінки в умовах, де широко поширювався варіант P.2 – також у Бразилії – оцінили ефективність вакцини в 49,6% після принаймні однієї дози і продемонстрували 50,7% через два тижні після другої дози. Коли з’являться нові дані, ВООЗ відповідно оновлюватиме рекомендації. </p>
+            <p>Наразі SAGE рекомендує використовувати цю вакцину відповідно до Дорожньої карти ВООЗ щодо визначення пріоритетів.</p>
+            <h3>Чи запобігає він зараженню та передачі?</h3>
+            <p>Наразі немає ґрунтовних даних щодо впливу вакцини проти COVID-19 Sinovac-CoronaVac на передачу SARS-CoV-2, вірусу, що викликає захворювання COVID-19.</p>
+            <p>Тим часом ВООЗ нагадує про необхідність залишатися курсом і продовжувати практику громадського здоров’я та соціальних заходів, які слід використовувати як комплексний підхід для запобігання інфекції та передачі. Ці заходи включають носіння маски, фізичну дистанцію, миття рук, респіраторну гігієну та гігієну від кашлю, уникнення скупчення людей та забезпечення належної вентиляції відповідно до місцевих національних рекомендацій.</p>
+
+            <a href="https://www.who.int/news-room/feature-stories/detail/the-sinovac-covid-19-vaccine-what-you-need-to-know">Посилання на джерела інформації</a>
         </div>
     </div>
 
-    <div id="modal-comirnaty" class="uk-modal-container" uk-modal>
+    <!-- <div id="modal-comirnaty" class="uk-modal-container" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <h2 class="uk-modal-title">Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>text</p>
+        </div>
+    </div> -->
+
+    <div id="get_point" class="uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">Пункти вакцинації</h2>
+            <h3>Київ</h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/926a56de-cc9f-4d32-a393-021cc1b3c194/doctors?mode=table" target="_blank">Міжнародний виставковий центрБроварський проспект</a>, 15 (ст. м. Лівобережна)</li>
+                <li><a href="https://helsi.me/clinic/fc0f5478-df1b-45ee-8b4b-64c2bd68af63/doctors?mode=table" target="_blank">ТЦ "ACADEM City"</a> Просп. Академіка Палладіна 16</li>
+                <li><a href="https://helsi.me/clinic/056cb775-7e60-4eef-938a-713d37ab0b83/doctors?mode=table" target="_blank">БМ "Агромат"</a> Вул. Булаховського Академіка, 4</li>
+                <li><a href="https://helsi.me/clinic/8ba33122-2fe4-4a9e-aad6-76052bf818d1/doctors?mode=table" target="_blank">ТЦ "ART Mall"</a> Вул. Заболотного Академіка, 37</li>
+                <li><a href="https://helsi.me/clinic/e0c8b8d0-6afc-441b-941b-7359d3beeef2/doctors?mode=table" target="_blank">ТЦ "АЛАДДІН"</a> Вул. Гришка Михайла, 3А</li>
+                <li><a href="https://helsi.me/clinic/d79a7c50-87c5-447d-aaf2-712ac75a58aa/doctors?mode=table" target="_blank">ТК "Аркадія"</a> Вул. Борщагівська, 154А</li>
+                <li><a href="https://helsi.me/clinic/a7be305e-889c-4b31-b35e-c65a03e6f201/doctors?mode=table" target="_blank">ТК "Аркадія"</a> Дніпровська набережна, 33</li>
+                <li><a href="https://helsi.me/clinic/38989d1d-ed93-4a9d-87d7-a120b19d95d3/doctors?mode=table" target="_blank">ТЦ "Ашан" на ПетрівціПросп</a>. Степана Бандери, 15А</li>
+                <li><a href="https://helsi.me/clinic/cfc123cf-4ccc-4c81-930a-f71d0dbb8df1/doctors?mode=table" target="_blank">ТЦ "Ашан" на Дарниці</a> Вул. Здолбунівська, 17</li>
+                <li><a href="https://helsi.me/clinic/29d271cb-ac36-47d9-9971-ebf82a8ac3a0/doctors?mode=table" target="_blank">ТРЦ "БЛОКБАСТЕР МОЛЛ"Просп. Степана Бандери, 36</li>
+                <li><a href="https://helsi.me/clinic/a800e6cc-37c0-4f7f-8e71-e5b47733d623/doctors?mode=table" target="_blank">ТРЦ "COSMO MULTIMALL"</a> Вул. Вадима Гетьмана, 6</li>
+                <li><a href="https://helsi.me/clinic/db42def1-4b79-4bb3-9a8a-f15036f4468d/doctors?mode=table" target="_blank">Готель "Нацiональний"</a> Вул. Липська, 5</li>
+                <li><a href="https://helsi.me/clinic/01adaebe-e51c-4f62-9cad-e0ac8e6fb30f/doctors?mode=table" target="_blank">ТРЦ "Dream"Просп. Оболонський, 21Б</li>
+                <li><a href="https://helsi.me/clinic/c9a79f98-70e9-4e61-9d61-bb0891605da0/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на Теремках</a> Дорога Кільцева, 1Б</li>
+                <li><a href="https://helsi.me/clinic/5a5b8bc3-5e2f-4fde-9598-f5e57fd4d774/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на Оболоні</a> Вул. Полярна, 20-Д</li>
+                <li><a href="https://helsi.me/clinic/88d725f0-c7a3-4aaf-8dd7-cfb44df31250/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на ПетрівціПросп</a>. Степана Бандери, 11-А</li>
+                <li><a href="https://helsi.me/clinic/8cf626d0-6823-4965-bfdd-7ec0dfce010b/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на Братиславській</a> Вул. Братиславська, 11</li>
+                <li><a href="https://helsi.me/clinic/aa33ba3b-8c87-4d43-8939-20b1eda30a26/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на ПознякахПросп</a>. Петра Григоренка, 40</li>
+                <li><a href="https://helsi.me/clinic/03f5a342-a16a-4c72-8132-3e71da813aed/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на Берковецькій</a> Вул. Берковецька, 6В</li>
+                <li><a href="https://helsi.me/clinic/ea270c74-f291-4fcd-8c8c-f817e688c632/doctors?mode=table" target="_blank">ТРЦ "GULLIVER"Пл. Спортивна, 1А</li>
+                <li><a href="https://helsi.me/clinic/daa8e493-f8a9-468e-83f0-93fe3e4d8285/doctors?mode=table" target="_blank">ТРЦ "КАРАВАН"</a> Вул. Лугова, 12</li>
+                <li><a href="https://helsi.me/clinic/ae79ad70-2987-4969-bf06-7e7d7d0f993a/doctors?mode=table" target="_blank">ТРЦ "МАРМЕЛАД"</a> Вул. Борщагівська, 154</li>
+                <li><a href="https://helsi.me/clinic/df2b328a-2c67-48e4-a481-f6b63f93621d/doctors?mode=table" target="_blank">ТРЦ "New Way"</a> Вул. Вербицького Архітектора, 1</li>
+                <li><a href="https://helsi.me/clinic/1fbff316-8d79-4be9-ba68-97e789220ea6/doctors?mode=table" target="_blank">ТРЦ "Ocean Plaza"</a> Вул. Антоновича, 176</li>
+                <li><a href="https://helsi.me/clinic/80cccaaa-ba46-43df-99f2-5d5ec6578555/doctors?mode=table" target="_blank">Патріарший собор Воскресіння Христового</a> Вул. Микільсько-Слобідська, 5</li>
+                <li><a href="https://helsi.me/clinic/d840a415-21b2-4ce3-a0e1-b7a02377a9de/doctors?mode=table" target="_blank">ТРЦ "Piramida"</a> Вул. Мишуги Олександра, 4</li>
+                <li><a href="https://helsi.me/clinic/bb48a382-82d7-46b3-86f5-dce6d161b186/doctors?mode=table" target="_blank">ТРК "PLAZA SPORT OUTLET"Просп. Бандери Степана, 20Б</li>
+                <li><a href="https://helsi.me/clinic/210396ba-e5cd-4c83-8bea-e479cea78c3b/doctors?mode=table" target="_blank">ТРЦ "РайON"</a> Вул. Лаврухіна, 4</li>
+                <li><a href="https://helsi.me/clinic/2dd6996b-1787-4e37-9ca6-fef7816bf3e3/doctors?mode=table" target="_blank">ТРЦ "Respublika Park" </a>Кільцева дорога, 1</li>
+                <li><a href="https://helsi.me/clinic/4f067211-8d3f-4306-87ed-120b0ae4ed4c/doctors?mode=table" target="_blank">ТРЦ "River Mall" </a>Дніпровська набережна, 12</li>
+                <li><a href="https://helsi.me/clinic/45bbd36a-5cc7-4815-8a7c-ceac48e07da6/doctors?mode=table" target="_blank">ТРЦ "Ретровіль"</a> Просп. Правди, 47</li>
+                <li><a href="https://helsi.me/clinic/642dcc13-4d67-4caa-bd1c-d08e124a8392/doctors?mode=table" target="_blank">ТРЦ "SkyMall"</a> Просп. Романа Шухевича, 2Т</li>
+                <li><a href="https://helsi.me/clinic/a6eb68e2-0a95-4c5f-80db-a3d71283d44e/doctors?mode=table" target="_blank">ТРЦ "SMART PLAZA POLYTECH"</a> Просп. Перемоги, 24</li>
+                <li><a href="https://helsi.me/clinic/edc1a067-a5a2-48ee-b62c-8d57a0373b4e/doctors?mode=table" target="_blank">ТРЦ "Універмаг Україна" </a>Пл. Перемоги, 3</li>
+                <li><a href="https://helsi.me/clinic/66a150ef-bbef-4146-8630-16eafeba8dad/doctors?mode=table" target="_blank">ТЦ "Хіт Mall" </a>Просп. Перемоги, 134/1</li>
+                <li><a href="https://helsi.me/clinic/16e896ba-16fd-4d6b-bdaa-d48ca90d891b/doctors?mode=table" target="_blank">ЦНАП Голосіївської РДА</a> Просп. Голосіївський, 42</li>
+                <li><a href="https://helsi.me/clinic/53af3359-7d2c-4b31-b847-28c77701686e/doctors?mode=table" target="_blank">ЦНАП Деснянської РДА</a> Просп. Маяковського, 29</li>
+                <li><a href="https://helsi.me/clinic/28279461-b8fd-44df-b15b-d9f6bf1a98d0/doctors?mode=table" target="_blank">ЦНАП Дарницької РДА</a> Вул. Олійника Степана, 21</li>
+                <li><a href="https://helsi.me/clinic/eef7d0f6-e339-46d8-83fe-4487c9b18d8f/doctors?mode=table" target="_blank">ЦНАП Печерської РДА</a> Вул. Омеляновича-Павленка Михайла, 15</li>
+                <li><a href="https://helsi.me/clinic/0aef7be6-2639-422a-9415-5dc95834359c/doctors?mode=table" target="_blank">ЦНАП Святошинської РДА</a> Просп. Перемоги, 97</li>
+                <li><a href="https://helsi.me/clinic/53522677-dd57-400b-81e3-978b9e9dfe18/doctors?mode=table" target="_blank">ЦНАП Солом'янської РДА</a> Просп. Повітрофлотський, 41</li>
+                <li><a href="https://helsi.me/doctors/kyiv/kabinet-shheplenq-dlya-vakcynaciyi-vid-covid-19" target="_blank">Пункти вакцинації у медзакладах</a> Обирайте будь-який зручний пункт</li>
+            </ul>
+                <h3>Одеса</h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/f8f095ee-be0b-4f3c-addf-c9c5bf1be425/doctors?mode=table" target="_blank">ТЦ "DEPO't"</a> Вул. Семена Палія 125Б</li>
+                <li><a href="https://helsi.me/clinic/4de7ad06-ddb1-4046-8641-6157ab889c2a/doctors?mode=table" target="_blank">Міжнародний Аеропорт "Одеса"</a> Вул. Центральний Аеропорт, 2</li>
+                <li><a href="https://helsi.me/clinic/f4a5876e-6514-48b1-9abc-457683934493/doctors?mode=table" target="_blank">ТЦ "Епіцентр" на Котовського</a> Вул. Паустовського, 14</li>
+                <li><a href="https://helsi.me/clinic/50595162-46bc-4c01-b466-e0c9e34b2eab/doctors?mode=table" target="_blank">ТЦ "Мегадом"</a> Вул. Толбухіна, 135</li>
+                <li><a href="https://helsi.me/clinic/c0d1a464-1bad-45c6-801f-486ba3bb8885/doctors?mode=table" target="_blank">Fontan Sky CenterСемафорний провулок, 4</li>
+                <li><a href="https://helsi.me/doctor/2ea8195a-1b5c-434e-8700-6adafbec2dec" target="_blank">ЗОШ №5</a> Вул. Балківська, 42/1</li>
+                <li><a href="https://helsi.me/clinic/a704403a-a9dc-45b7-bb47-cbab2c2c933a/doctors?mode=table" target="_blank">ЗОШ №72</a> Вул. Ільфа і Петрова, 15а</li>
+                <li><a href="https://helsi.me/doctor/61d686f7-ba45-4a43-9924-4526b01b930b" target="_blank">ЦПМСД №4</a> Вул. Левітана, 62</li>
+                <li><a href="https://helsi.me/doctor/acb6d04c-de6c-4cf3-9815-c769334d6542" target="_blank">ЦПМСД №10</a> Вул. Академіка Гаркавого, 2</li>
+                <li><a href="https://helsi.me/doctor/928ba223-5930-4488-bfea-aa255ecab0c9" target="_blank">ТОВ "Дім Медицини"</a> Вул. Розкидайлівська, 69 /71</li>
+                <li><a href="https://helsi.me/doctor/16e78201-a96c-42ac-acb3-c4b441e78e12" target="_blank">Видавництво "Чорномор'я"Пл. Дерев’янка, 1</li>
+                <li><a href="https://helsi.me/doctor/de2f2408-9f67-4003-be97-f86a7c63e7ac" target="_blank">МКЛ №1</a> Вул. Болгарська, 38</li>
+                <li><a href="https://helsi.me/clinic/09482fe1-0d70-41ca-a264-5bc2941887b2/doctors?mode=table" target="_blank">ТРЦ "Сити-центр"Просп. Небесної Сотні, 2</li>
+                <li><a href="https://helsi.me/clinic/0c413328-eb0b-4361-9ec1-d4739510efb2/doctors?mode=table" target="_blank">ТРЦ "Сити-центр-Котовский"</a> Вул. Ойстраха Давида, 32</li>
+                <li><a href="https://helsi.me/clinic/63930f15-fac0-4192-a22c-fd6ff0a2557c/doctors?mode=table" target="_blank">Центр вакцинації у Парку Горького</a> Вул. Петрова Генерала, 17 (боковий вхід з </a> Вул.Героїв Крут)</li>
+            </ul>
+            <h3>
+                Харків
+            </h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/71cc2c51-869b-4acc-a1fa-fb5f384825d8/doctors?mode=table" target="_blank">Бізнес центр "Optimum busines center"</a> Вул. Полтавський шлях, 56</li>
+                <li><a href="https://helsi.me/clinic/808adc0e-aef5-4457-a9f2-8db6e01731d2/doctors?mode=table" target="_blank">НДІ гігієни праці та професійних захворювань</a> Вул. Трінклера, 6</li>
+                <li><a href="https://helsi.me/clinic/40b329df-a549-4a70-b7a9-19970179fe3b/doctors?mode=table" target="_blank">Клініка Your baby</a> Вул. Кооперативна, 28А</li>
+                <li><a href="https://helsi.me/clinic/d7c85758-01d5-4d37-b0e4-35e1ddc46503/doctors?mode=table" target="_blank">ТРЦ "Французький бульвар"</a> Вул. Павлова Академіка, 44Б</li>
+                <li><a href="https://helsi.me/clinic/fd3d9ad5-7bfc-45de-b10a-60ed7b1b30f1/doctors?mode=table" target="_blank">ТРЦ "Nikolsky"</a> Вул. Пушкінська, 2</li>
+                <li><a href="https://helsi.me/clinic/800e18a5-3a7a-4943-ab97-1b84a40c6e6a/doctors?mode=table" target="_blank">Територіальний центр надання послуг</a> Вул. 12-квітня, 8</li>
+                <li><a href="https://helsi.me/clinic/c64ee173-a561-454a-a93b-b866b71a63a4/doctors?mode=table" target="_blank">Територіальний центр надання послуг</a> Вул. Богдана Хмельницького, 10-А</li>
+                <li><a href="https://helsi.me/clinic/598a1d4b-de11-4653-9f4c-1f4d5cdd600d/doctors?mode=table" target="_blank">Аптека №361</a> Вул. Сумська, 59</li>
+                <li><a href="https://helsi.me/clinic/877c1257-331d-4446-8635-abb19173c0dc/doctors?mode=table" target="_blank">Філія поліклінічного відділення КНП "МЛ №3" ХМР</a> Вул. Доватора Генерала, 7</li>
+                <li><a href="https://helsi.me/doctors/kharkiv/kabinet-shheplenq-dlya-vakcynaciyi-vid-covid-19" target="_blank">Пункти вакцинації у медзакладахОбирайте будь-який зручний пункт</li>
+            </ul>
+            <h3>
+                Біла Церква
+            </h3>
+            <li><a href="https://helsi.me/doctor/fd720968-5838-4046-be28-561b730b27bd" target="_blank">ЦПМСД №1 на І. Мазепи</a> Вул. Мазепи Івана, 65А</li>
+            <li><a href="https://helsi.me/doctor/a3f2e30e-a907-46fb-8bbe-6a7ce8304c81" target="_blank">ЦПМСД №1 на Я. Мудрого</a> Вул. Ярослава Мудрого, 49</li>
+            <li><a href="https://helsi.me/doctor/c863ae4f-80fb-4db6-98b0-088ef0e2187c" target="_blank">ЦПМСД №2 на Шевченка</a> Вул. Шевченка, 69</li>
+            <li><a href="https://helsi.me/doctor/45f20984-0ddd-4c48-b6ec-8e62b7321e01" target="_blank">ЦПМСД №2 на Леваневського</a> Вул. Леваневського, 63</li>
+            
+            <h3>Запоріжжя</h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/7a3df77e-3350-4fba-a8fc-fbd68fa5df7d/doctors?mode=table" target="_blank">ТЦ "АМСТОР"</a> Вул. Перемоги, 64</li>
+                <li><a href="https://helsi.me/clinic/c33c343a-aa17-4aca-bb45-78f938d21a69/doctors?mode=table" target="_blank">ТЦ "АМСТОР"Просп. Преображенського Інженера, 13</li>
+                <li><a href="https://helsi.me/clinic/21b242ea-90df-46dc-9f84-184646289dbd/doctors?mode=table" target="_blank">ТЦ "Епіцентр"</a> Вул. Запорізька, 1В</li>
+                <li><a href="https://helsi.me/clinic/f77ac2dc-f55f-46bb-b0b3-5b17db6af9ec/doctors?mode=table" target="_blank">ТЦ "Епіцентр"Нікопольське шосе, 1Е</li>
+                <li><a href="https://helsi.me/clinic/3948f514-1462-445a-bd01-b7b9d4cbc588/doctors?mode=table" target="_blank">ТЦ "Епіцентр"Оріхівське шосе, 27</li>
+                <li><a href="https://helsi.me/clinic/18f0e6ee-e6f0-49fc-8f86-cdfaa5bc83ea/doctors?mode=table" target="_blank">ТЦ "Сіті Молл"</a> Вул. Запорізька, 1Б</li>
+                <li><a href="https://helsi.me/clinic/26d06f14-3744-4415-a518-09046bfce219/doctors?mode=table" target="_blank">ТЦ "Континент"</a> Вул. Товариська, 39</li>
+                <li><a href="https://helsi.me/clinic/280f4add-4155-4c5a-9880-0fcd3845a0a5/doctors?mode=table" target="_blank">ТЦ "Космос-Сіті"</a> Вул. Космічна, 119</li>
+                <li><a href="https://helsi.me/clinic/18e948d4-889e-420a-a1a7-916185d6d382/doctors?mode=table" target="_blank">ТРЦ "ПАЛЬМІРА PLAZA"Просп. Соборний, 92</li>
+                <li><a href="https://helsi.me/doctors/zaporizhzhya/kabinet-shheplenq-dlya-vakcynaciyi-vid-covid-19" target="_blank">Пункти вакцинації у медзакладахОбирайте будь-який зручний пункт</li>
+            </ul>
+
+            <h3>Рівне</h3>
+                <ul>
+                    <li><a href="https://helsi.me/doctor/b0a0556d-f1e3-4e69-a2e7-6319578ef493" target="_blank">Рівненський академічний український музично-драматичний театр</a> Вул. Театральна площа, 1 (центральний вхід)</li>
+                    <li><a href="https://helsi.me/doctor/963c730c-f977-457f-b6b0-7ecfb1bec795" target="_blank">Рівненська районна державна адміністрація</a> Вул. Соборна, 195</li>
+                </ul>
+                <h3>Чернівці</h3>
+                <ul>
+                    <li><a href="https://helsi.me/doctor/87db40c9-66e3-4f45-8176-4af8015fdc02" target="_blank">Міська Поліклініка №1</a> Вул. Шкільна, 6</li>
+                    <li><a href="https://helsi.me/doctor/a0899ac5-3d20-4e3f-a387-8dd23d47a00c" target="_blank">Міська поліклініка №2</a> Вул. Лесі Українки,11</li>
+                    <li><a href="https://helsi.me/doctor/58d62f98-d764-4f15-9538-944f95e975df" target="_blank">Міська поліклініка №3</a> Вул. Головна, 246 В</li>
+                    <li><a href="https://helsi.me/doctor/7d0db4c0-6032-4401-b032-39869a3576e5" target="_blank">Міська поліклініка №5</a> Вул. Олександра Щербанюка, 34 А</li>
+                    <li><a href="https://helsi.me/doctor/fc60fa4b-7a65-4a99-800d-f1a2e3307385" target="_blank">ЦПМСД "Садгора"</a> Вул. Ярослава Мудрого, 2</li>
+                    <li><a href="https://helsi.me/doctor/4d2175bc-f3ef-4f2f-8b34-94f1c0d80b92" target="_blank">ЦПМСД "Роша"</a> Вул. Горіхівська, 3</li>
+                </ul>
+            <h3>Полтава</h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/ed1778b5-94b9-40d2-aeb1-37a91de7ab72/doctors?mode=table" target="_blank">Центр масової вакцинації в ТРЦ "Київ"</a> Вул. Зіньківська, 6А</li>
+                <li><a href="https://helsi.me/clinic/8097e903-5944-4975-9b5d-bff06cde9e5b/doctors?mode=table" target="_blank">Центр масової вакцинації в ПД "Листопад"</a> Вул. Соборності, 58</li>
+                <li><a href="https://helsi.me/clinic/91f5d85e-0990-4022-8be9-197adca93fee/doctors?mode=table" target="_blank">Відокремлений корпус кардіологічного диспансера</a> Вул. Івана Мазепи, 21</li>
+            </ul>
+
+            <h3>Лубни</h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/7faaaf33-fa86-4ed8-9a0d-944e86ab878a/doctors?mode=table" target="_blank">Кінотеатр "Київська Русь"Просп. Володимирський, 16</li>
+            </ul>
+
+            <h3>Львів</h3>
+            <ul>
+                <li><a href="https://helsi.me/clinic/52f55726-ce08-4685-a3f6-5e609c6ab89e/doctors?mode=table" target="_blank">Cтадіон "Арена Львів"</a> Вул. Стрийська, 199</li>
+                <li><a href="https://helsi.me/clinic/6a357079-104d-4c81-ae12-e9e9f58dedfb/doctors?mode=table" target="_blank">Головний Залізничний ВокзалПл. Двірцева, 1</li>
+                <li><a href="https://helsi.me/clinic/6afa58e1-e183-4d4e-acb5-5da3a072f9b9/doctors?mode=table" target="_blank">Головна пошта</a> Вул. Словацького, 1</li>
+                <li><a href="https://helsi.me/clinic/c3592fb3-1a81-4abe-940a-f8f0038bf39a/doctors?mode=table" target="_blank">Головний корпус ЛНУ ім. Івана Франка</a> Вул. Університетська, 1</li>
+                <li><a href="https://helsi.me/clinic/72667949-17e1-4241-b7e4-bd698466770e/doctors?mode=table" target="_blank">Львівський палац мистецтв</a> Вул. Коперника, 17</li>
+                <li><a href="https://helsi.me/clinic/cae91c64-e51c-44a6-9db6-9758b7c8edc1/doctors?mode=table" target="_blank">ТЦ "Скриня"</a> Вул. Городоцька, 179</li>
+                <li><a href="https://helsi.me/clinic/843b2110-f430-4054-b94f-67f717a61fca/doctors?mode=table" target="_blank">ТЦ "Марк"</a> Вул. Княгині Ольги, 95</li>
+                <li><a href="https://helsi.me/clinic/519bf364-b2e6-4506-8d79-b0fc837a1817/doctors?mode=table" target="_blank">Центр ДовженкаПросп. Червоної Калини, 81</li>
+                <li><a href="https://helsi.me/clinic/4eb3538f-bcb1-4711-b727-38430decab6f/doctors?mode=table" target="_blank">ТЦ "Форум"</a> Вул. Під Дубом, 7Б</li>
+                <li><a href="https://helsi.me/clinic/b1e4a845-708b-4db6-8a56-69cf9ac189d4/doctors?mode=table" target="_blank">ТЦ "Victoria Gardens"</a> Вул. Кульпарківська, 226а</li>
+                <li><a href="https://helsi.me/clinic/65d83958-78a2-4405-b767-f26046b1069f/doctors?mode=table" target="_blank">ТЦ "Spartak"</a> Вул. Гетьмана Мазепи, 1Б</li>
+                <li><a href="https://helsi.me/clinic/fce994e2-7f2b-443d-ad3b-da2d280027d2/doctors?mode=table" target="_blank">ТВК "Південний"</a> Вул. Щирецька, 36</li>
+                <li><a href="https://helsi.me/clinic/525a09c7-a09e-4aa7-ab4e-dc48170fb1d9/doctors?mode=table" target="_blank">Ліцей "Львівський"</a> Вул. Лисиницька, 3</li>
+                <li><a href="https://helsi.me/clinic/73242457-f48b-411d-a53a-d5da63b02e68/doctors?mode=table" target="_blank">Школа № 43</a> Вул. Масарика, 9</li>
+                <li><a href="https://helsi.me/clinic/654bf06f-d82c-42d1-ae12-2f0bea1e94a5/doctors?mode=table" target="_blank">ТЦ "Епіцентр К" на Хмельницького</a> Вул. Богдана Хмельницького, 188А</li>
+                <li><a href="https://helsi.me/clinic/cc4e045a-016d-459a-b10b-3640f0243131/doctors?mode=table" target="_blank">ТЦ "Епіцентр К" на Городоцькій</a> Вул. Городоцька, 302</li>
+                <li><a href="https://helsi.me/clinic/e9132017-4c65-4a48-a932-c1955b8ec83e/doctors?mode=table" target="_blank">Нижній Шувар</a> Вул. Хуторівка, 4Б</li>
+                <li><a href="https://helsi.me/clinic/a1a474d2-6c05-40a1-9eee-08d13ad0b061/doctors?mode=table" target="_blank">м. Винники, Народний дім</a> Вул. Шевченка, 5</li>
+                <li><a href="https://helsi.me/clinic/21152f3e-0a43-4833-8c3c-c68fc0719cde/doctors?mode=table" target="_blank">смт. Брюховичі, Центр масової вакцинації "Народний Дім"</a> Вул. Івасюка, 2А</li>
+                <li><a href="https://helsi.me/clinic/78ae22c2-3a0c-4186-ade2-977d4a442fe8/doctors?mode=table" target="_blank">ЦНАП м.Львовапл. Ринок, 1</li>
+                <li><a href="https://helsi.me/clinic/64b3dac7-fcd7-4cc1-a9b4-2ad5806e5955/doctors?mode=table" target="_blank">Шевченківська районна адміністрація</a> Вул. Липинського, 11</li>
+                <li><a href="https://helsi.me/doctors/lviv/kabinet-shheplenq-dlya-vakcynaciyi-vid-covid-19" target="_blank">Пункти вакцинації у медзакладахОбирайте будь-який зручний пункт</li>
+            </ul>
+
         </div>
     </div>
+    
 
 
     <script>
