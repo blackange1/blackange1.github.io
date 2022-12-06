@@ -1,0 +1,96 @@
+.wraper{
+    width: 80%;
+    margin: 0 auto;
+}
+td {
+    padding: 10px 20px;
+}
+.nav{
+    display: flex;
+}
+.nav-tonal{
+    padding: 10px;
+    width: 50%;            
+}
+.tonal-button{
+    text-align: right;
+}
+.tonal-viev{
+    display: flex;
+    align-items: center;
+}
+table{
+    width: 100%;
+}
+.active {
+    background-color: blue;
+    color: yellow;
+}
+.random{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* chord */
+:root { --chord_color: #456; }
+.result{
+    
+}
+.chord_wraper{
+
+}
+.chord_title{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.chord_body{
+    display: flex;
+    justify-content: space-between;
+}
+.chord{
+    /* display: inline-block;
+    margin-right: 10px; */
+    /* border-bottom: 1px solid var(--chord_color); */
+}
+.chord_info{
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.chordrow{
+    display: flex;
+}
+.chordcoll:last-child{
+    border-right: 1px solid var(--chord_color);
+}
+.chordrow:last-child .chordcoll{
+    /* border: 1px solid white; */
+    border-width: 0;
+    border-top: 1px solid var(--chord_color);
+}
+.chordcoll{
+    width: 40px;
+    height: 20px;
+    border-top: 1px solid var(--chord_color);
+    border-left: 1px solid var(--chord_color);
+    box-sizing: border-box;
+
+}
+.circle{
+    /* border: 1px solid green; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    margin-top: -10px;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    padding-top: 3px;
+}
+.bg_chord{
+    background-color: darkseagreen;
+}
