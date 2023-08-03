@@ -29,11 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 'Content-Type': 'application/json',
                 // 'Access-Control-Allow-Origin': 'http://localhost:63342'
             },
-            body: JSON.stringify({
-                'name': 'qwerty',
-                'email': 'qwerty',
-                'phone': 'qwerty',
-            })
+            body: JSON.stringify(bodyValue)
 
         })
             .then(response => response.json())
