@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const print = console.log
     const $form = document.getElementById('form_create_lead')
     const $submit = document.getElementById('submit_create_lead')
-    const urlAPI = 'https://160c-185-19-6-88.ngrok-free.app' + '/api/create_lead'
+    const urlAPI = 'https://b710-185-19-6-51.ngrok-free.app' + '/api/create_lead'
     const nameInputs = ['name', 'email', 'phone']
 
     $form.onclick = function (event) {
