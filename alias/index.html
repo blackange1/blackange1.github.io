@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alias Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container m-4">
+    <h1>Alias 🎲</h1>
+
+    <div id="team-info">
+        <p>Хід команди: <span id="current-team">Червоні</span></p>
+        <p>Червоні: <span id="score-red">0</span> | Сині: <span id="score-blue">0</span></p>
+    </div>
+    <!--    <div class="word-display-wrapper">-->
+    <!-- Button trigger modal -->
+
+    <div id="word-display">Натисни "Старт"</div>
+
+    <!--    </div>-->
+
+    <div class="d-flex flex-column">
+        <button id="info-help-btn"
+                type="button" class="btn btn-secondary d-none" data-bs-toggle="modal"
+                data-bs-target="#ModalHelpWord"> Підказка
+        </button>
+        <button id="start-btn" class="btn btn-primary">Старт</button>
+    </div>
+    <div>
+        <button id="skip-btn" class="btn btn-warning" disabled>Пропустити</button>
+        <button id="correct-btn" class="btn btn-warning" disabled>Вгадано</button>
+
+    </div>
+
+    <div id="timer">60</div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ModalHelpWord" tabindex="-1" aria-labelledby="ModalHelpWordLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ModalHelpWordLabel">Підказка</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="info-help-display" class="modal-body" style="text-align: left;">
+                help-info
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

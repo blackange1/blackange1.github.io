@@ -1,0 +1,61 @@
+body {
+    /*font-family: Roboto, sans-serif;*/
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*.word-display-wrapper {*/
+/*    position: relative;*/
+/*}*/
+
+/*#info-help-open {*/
+/*    position: absolute;*/
+/*    top: -5px;*/
+/*    right: -5px;*/
+/*    !*padding: .0rem 0.625rem;*!*/
+/*    padding: 0 8.58px;*/
+/*    font-size: 14px;*/
+/*    border: 1px solid #0d6efd;*/
+/*    border-radius: 50%;*/
+/*    background-color: #0d6efd;*/
+/*    color: white;*/
+/*}*/
+
+#word-display {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#timer {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #e74c3c;
+}
+
+#team-info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/*{ "word": "музика" },*/
+/*{ "word": "кава" },*/
+/*{ "word": "телефон" },*/
+/*{ "word": "парасолька" },*/
+/*{ "word": "кіно" },*/
+/*{ "word": "пес" },*/
+/*{ "word": "море" }*/
